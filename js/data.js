@@ -2309,7 +2309,820 @@ const QUIZ_DATA = {
           "skin-soft-tissue": {
             name: "Skin & Soft Tissue",
             emoji: "🧫",
-            questions: []
+            questions: [
+              // ── Scenario-based: viral exanthems, toxins & pyogenic infections ──
+              {
+                q: "A 28 yrs old menstruating woman appeared in the emergency room with the following signs & symptoms- fever, 104 deg C fever, WBC -16000, BP 90/65mmHg. A scarlatiniform rash on her trunk, palms & soles, extreme fatigue, vomiting & diarrhoea. The patient described in this case most likely has which of the following",
+                options: ["Chicken pox", "GB syndrome", "SSS", "TSS"],
+                answer: 3,
+                explanation: ""
+              },
+              {
+                q: "A 9 year boy presented with fever and nonspecific symptoms followed by a distinctive rash on the cheeks. which of the following viruses may cause this disease",
+                options: ["HSV", "Parvo", "Rubella", "Rubeola"],
+                answer: 1,
+                explanation: ""
+              },
+              {
+                q: "A viral organism was isolated from a painful blister on the lip of a teenage girl. The agent was found to contain double standard linear DNA and was enveloped. the paient had a similar sore approximately 2 months ago. which of the following is the most likely causative organism",
+                options: ["Adeno", "Coxsackie", "HS type 1", "Herpes Zoster"],
+                answer: 2,
+                explanation: ""
+              },
+              {
+                q: "A diabetic patient developed cellulitis due to S.aureus which was found to be MRSA on the AST. All the following antibiotics will be appropriate except",
+                options: ["Vancomycin", "Imipenem", "Teicoplanin", "Linezolid"],
+                answer: 1,
+                explanation: ""
+              },
+              {
+                q: "A woman had a high fever, hypotension & a diffuse macular rash. when all cultures showed no bacterial growth, a diagnosis of toxic shock syndrome was made. Regarding the mechanism by which the toxin causes this disease, which one of the following is least accurate?",
+                options: [
+                  "The toxin is not processed with in the macrophage",
+                  "The toxin binds to both the class II MHC protein & the T cell receptors.",
+                  "The toxin activates many CD4 positive T cells & large amount of interleukins are released",
+                  "The toxin has an A-B subunit structure. The B subunit binds to the receptor, and the A subunit enters the cells & activates them"
+                ],
+                answer: 3,
+                explanation: ""
+              },
+              {
+                q: "A 3year old girl presented to her pediatrician's office with fever, swollen lymph node, & a vesicular rash on her chest and upperarm. The vesicles were at various stages of development: some were newly forming, while some were crusted over. Which of the following infectious agents is the most likely cause of this girl's rash.",
+                options: ["Small pox", "Parvovirus B 19", "EBV", "VZV"],
+                answer: 3,
+                explanation: ""
+              },
+              {
+                q: "A 5 year old boy is brought into the clinic with a rash that started on his trunk and now has spread to his face and extremities. Other than the rash, he appeared healthy. his vital signs are temperature of 37.8degC, pulse 100/min, blood pressure 110/80mmhg and respirations 21/min. He started kindergarten 3 weeks ago and mentions that some of his classmates have had a similar rash and had to miss school. A physical exams reveals a rash that is primarily on the boy's abdomen; there are a few lesions on his face and extremities. This child has no history of immunizations. Which of the following is the most likely disease affecting the patient",
+                options: ["Chicken pox", "Rubella", "Rubeola", "Shingles"],
+                answer: 0,
+                explanation: ""
+              },
+              {
+                q: "A 5 year old boy is brought into the clinic with a rash that started on his trunk and now has spread to his face and extremities. Other than the rash, he appeared healthy. his vital signs are temperature of 37.8degC, pulse 100/min, blood pressure 110/80mmhg and respirations 21/min. He started kindergarten 3 weeks ago and mentions that some of his classmates have had a similar rash and had to miss school. A physical exams reveals a rash that is primarily on the boy's abdomen; there are a few lesions on his face and extremities. This child has no history of immunizations. Which virus is the most likely cause of this patient's infection?",
+                options: ["Rubella virus", "Measles virus", "Herpes Simplex virus", "Varicella Zoster virus"],
+                answer: 3,
+                explanation: ""
+              },
+              {
+                q: "A 35 year old man complains that his left hip is painful after being punctured by a tool when he was at work 4 days ago. After cleaning the wound quickly, he went on about his work. The wound now has pus in it and it is erythematous and swollen. Physical examination reveals a purulent and relatively deep skin lesion with an erythematous swollen region around the puncture that extends upto 2cm from the wound. Asample of the puruleny material obtained from the lesion is cultured on a blood agar plate 7 Gram stained. The resulting colonies are Gram positive cocci in clusters that are beta heolytic, catalase positive, & coagulase positive. Which of the following organisms is the most likely cause of this patient's infection?",
+                options: [
+                  "Streptococcus pyogenes",
+                  "Staphylococcus epidermidis",
+                  "Staphylococcus aureus",
+                  "Clostridium perfringens"
+                ],
+                answer: 2,
+                explanation: ""
+              },
+              {
+                q: "A 55 year old man came to the clinic with complaints of pain on the right lower portion of his ribcage. Physical examination elicits pain to the touch along the intercostal dermatome. Vesicular skin lesions are also observed. which of the following is the most likely cause of this patient's condition?",
+                options: ["Herpes Simplex virus 1", "Herpes simplex virus 2", "CMV", "VZV"],
+                answer: 3,
+                explanation: ""
+              },
+              {
+                q: "A middle aged lady presented with diffuse, spreading, painful red swelling of left leg. Margins were ill defined, and she had fever with chills. The lesion is typically caused by:",
+                options: ["Streptococcus pyogenes", "Bacteroides spp", "Clostridium perfringens", "Erysipelothrixrhusiopathiae"],
+                answer: 0,
+                explanation: ""
+              },
+              {
+                q: "A diabetic lady developed furuncles at the back of her neck that coalesced and spread more deeply, later forming multiple draining sinuses. The Gram stain of the pus is most likely to show:",
+                options: ["GPC in chains", "GPC in clusters", "GNB", "GPB"],
+                answer: 1,
+                explanation: ""
+              },
+              {
+                q: "Hidradenitis is a chronic infection of obstructed apocrine(sweat) glands in the axilla, genital, or perianal areas with intermittent discharge (often foul smelling pus). This condition can be caused by all of the following except",
+                options: ["Staphylococcus aureus", "Pseudomonas aeruginosa", "Streptococcus agalactiae", "Bacteroides spp"],
+                answer: 1,
+                explanation: ""
+              },
+              {
+                q: "A person with a second degree burn develops greenish pus oozing from the burn,s wound. The most likely pathogen is :",
+                options: ["Staphylococcus aureus", "Pseudomonas aeruginosa", "Klebsiella oxytoca", "Acinetobacter baumannii"],
+                answer: 1,
+                explanation: ""
+              },
+              {
+                q: "A lady aged 56 years presented with a non-healing ulcer on the right foot for a month. She is diabetic with poor control of blood agar. Best sample to identify the pathogen is:",
+                options: ["Discharge using a swab", "Slough at the floor of the ulcer", "Washings with sterile saline", "Debrided infected tissue"],
+                answer: 3,
+                explanation: ""
+              },
+              {
+                q: "A newborn developed localized tender blisters andbullae later, leading to exfoliation of skin. Staphylococcal toxin responsible for this condition is:",
+                options: ["Epidermolytic toxin", "Panton-Valentine toxin", "Gamma hemolysin", "Toxic shock syndrome toxin"],
+                answer: 0,
+                explanation: ""
+              },
+              {
+                q: "A man presented with fever, desquamating rash, hypotension. He also has an abscess in gluteal region and pus drained has grown Staphylococcus aureus. The mechanism behing the generalized symptom is:",
+                options: ["Toxic shock syndrome toxin", "Panton Valentine toxin", "Exfoliative toxin", "Hemolysin"],
+                answer: 0,
+                explanation: ""
+              },
+              {
+                q: "A man has developed painful pustular lesion in hairy, moist regions due to infection of the hair follicles. A clinical diagnosis of furuncle(boil) was made. Which of the following biochemical tests is useful for the identification of the most likely causative agent of this condition?",
+                options: ["Coagulase test", "CAMP test", "Bile esculin test", "Bacitracin susceptibility test"],
+                answer: 0,
+                explanation: ""
+              },
+              {
+                q: "A lady breastfeeding a child aged 7 days developed a tender nodular lesion around the nipple with pus pointing. A clinical diagnosis of breast abscess was made. The gram staining of the pus is most likely to show:",
+                options: ["GPC in chains", "GPC in clusters", "GNB", "GPB"],
+                answer: 1,
+                explanation: ""
+              },
+              {
+                q: "A man has swollen left foot, discharging sinuses, and discharge contains granules. Selective culture media used to isolate Actinomycetes and fungi have yielded no growth. The probable causative organisms could be:",
+                options: ["Mycobacterium tuberculosis", "Yersinia pestis", "Chlamydophila pneumoniae", "Staphylococcus aureus"],
+                answer: 3,
+                explanation: ""
+              },
+              {
+                q: "In a neonatal ICU, a cluster of staphylococcal infections with similar antibiotic sensitivity pattern was observed. It was planned to screen healthcare workers of that ICU for Saphylococcal carriage. Ideal body site from where swabs can be collected is :",
+                options: ["Anterior nares", "Pharynx", "Throat", "Rectum"],
+                answer: 0,
+                explanation: ""
+              },
+              {
+                q: "A man has developed recurrent follicular infections in the axilla, which is rich in apocrine glands. A clinical diagnosis of hidradenitis suppurativa was made. The culture of the pus specimen in nutrient agar yielded golden yellow colonies. The selective medium preferred to isolate Staphylococcus aureus is:",
+                options: ["Sheep blood agar", "Crystal violet blood agar", "Mannitol salt agar", "MacConkey agar"],
+                answer: 2,
+                explanation: ""
+              },
+              {
+                q: "Staphylococcus aureus isolated from an abscess was found to be resistant to sefoxitin and sensitive to linezolid, clindamycin and vancomycin. The preferred antibacterial agent is",
+                options: ["Cloxacillin", "Clindamycin", "Vancomycin", "Amoxicillin-clavulanic acid"],
+                answer: 1,
+                explanation: ""
+              },
+              {
+                q: "A person developed a tender, bright red, swollen and indurated peau\"d orange texture of involved skin along with fever and chills. The causative agent of this type of lesion is:",
+                options: ["Staphylococcus aureus", "Streptococcus pyogenes", "Clostridium perfringens", "Coagulase negative Staphylococcus"],
+                answer: 1,
+                explanation: ""
+              },
+              {
+                q: "A man developed acute painful skin lesions at the ankle region with minimal erythema at the site of involvement, later the skin became dusky and anesthetized associated with extensive necrosis of subcutaneous tissue, fascia and muscle. This condition is known as :",
+                options: ["Erysipelas", "Impetigo", "Necrotizing fasciitis", "Cellulitis"],
+                answer: 2,
+                explanation: ""
+              },
+
+              // ── Skin flora, lesions & soft-tissue infections ──
+              {
+                q: "Normal resident microbial flora of skin includes all of the following, EXCEPT:",
+                options: ["Coagulase-negative staphylococci", "Anaerobic bacteria", "Corynebacterium diphtheriae", "Propionibacterium acnes"],
+                answer: 2,
+                explanation: ""
+              },
+              {
+                q: "All of the following can produce purpuric lesions, EXCEPT:",
+                options: ["Endocarditis", "Meningococcal septicaemia", "Molluscum contagiosum virus", "Dengue virus"],
+                answer: 2,
+                explanation: ""
+              },
+              {
+                q: "Ecchymosis (extravasation of blood into skin, of size >1 cm) could be due to:",
+                options: ["Marburg virus", "Rubella virus", "Cytomegalovirus", "Streptococcus pyogenes"],
+                answer: 0,
+                explanation: ""
+              },
+              {
+                q: "A person presents with fever and eschar on his forearm. It could be because of:",
+                options: ["Yersinia pestis", "Mycobacterium marinum", "Orientia tsutsugamushi", "Epidermophyton floccosum"],
+                answer: 2,
+                explanation: ""
+              },
+              {
+                q: "A diabetic lady presented with skin lesions that were dry, scaly, itchy, and discoloured (reddish brown) for 2 months. the causative agent could be:",
+                options: ["Streptococcus pyogenes", "Corynebacterium minutissimum", "Staphylococcus aureus", "Treponema pallidum"],
+                answer: 1,
+                explanation: ""
+              },
+              {
+                q: "Nail of a patient is separated from nail bed, becomes green with foul Odour. The causative agent is:",
+                options: ["Staphylococcus aureus", "Streptococcus pyogenes", "Pseudomonas aeruginosa", "Bacteroides species"],
+                answer: 2,
+                explanation: ""
+              },
+              {
+                q: "Fournier's gangrene is a rare and often fulminant necrotizing fasciitis of the perineum and genital region frequently due to:",
+                options: ["Staphylococcus aureus", "Pseudomonas aeruginosa", "Mixed aerobic and anaerobic bacteria", "Acinetobacter species"],
+                answer: 2,
+                explanation: ""
+              },
+              {
+                q: "All are true about the quantitative culture of tissue biopsy specimens in burns, EXCEPT:",
+                options: [
+                  "Useful to identify the most prevalent organism in a polymicrobial infection",
+                  ">105 CFU/g of tissue is indicative of a potentially serious infection",
+                  "Cannot differentiate commensals from pathogens with certainty",
+                  "Useful to assess the severity of infection"
+                ],
+                answer: 2,
+                explanation: ""
+              },
+              {
+                q: "Chronic draining sinuses may be found in the following infections, EXCEPT:",
+                options: [
+                  "Malassezia furfur infections",
+                  "Nontuberculous mycobacterial infections",
+                  "Actinomycosis",
+                  "Infections associated with implanted foreign bodies"
+                ],
+                answer: 0,
+                explanation: ""
+              },
+              {
+                q: "All of the following are preferred samples for culture of infected diabetic foot, EXCEPT:",
+                options: [
+                  "Aspirated fluid",
+                  "Wound swab from the ulcers",
+                  "Pus taken from a deep pocket within the wound",
+                  "Debrided infected tissue"
+                ],
+                answer: 1,
+                explanation: ""
+              },
+              {
+                q: "Nodular lymphangitis commonly follows superficial inoculation with one of the following organisms, EXCEPT:",
+                options: ["Sporothrixschenckii", "Nocardia brasiliensis", "Wuchereriabancrofti", "Francisella tularensis"],
+                answer: 2,
+                explanation: ""
+              },
+              {
+                q: "Myositis is seen in all of the following, EXCEPT:",
+                options: ["Kala azar", "Chagas'disease", "Cysticercosis", "Trichinellosis"],
+                answer: 0,
+                explanation: ""
+              },
+              {
+                q: "Reactive polyarthritis is seen in all of the following, EXCEPT:",
+                options: ["Yersinia enterocolitica", "Vibrio cholerae", "Shigella flexneri", "Campylobacter jejuni"],
+                answer: 1,
+                explanation: ""
+              },
+              {
+                q: "The most common cause of acute osteomyelitis is:",
+                options: ["Staphylococcus aureus", "Streptococcus pyogenes", "Salmonella Typhi", "Brucella species"],
+                answer: 0,
+                explanation: ""
+              },
+
+              // ── Staphylococcus ──
+              {
+                q: "All the following are correct regarding the cell wall-associated virulence factor of Staphylococcus aureus and its action, EXCEPT:",
+                options: [
+                  "Peptidoglycan: Provides rigidity to cell wall",
+                  "Clumping factor: Inhibition of opsonization",
+                  "Teichoic acid: Adhesion of cocci to mucosal surfaces",
+                  "Protein-A: Anti-complementary"
+                ],
+                answer: 1,
+                explanation: ""
+              },
+              {
+                q: "All of the following are mediated by exfoliative toxin of Staphylococcus aureus, EXCEPT:",
+                options: ["Pemphigus neonatorum", "Bullous impetigo .", "Toxic shock syndrome", "Scalded skin syndrome"],
+                answer: 2,
+                explanation: ""
+              },
+              {
+                q: "True about staphylococcal enterotoxin is:",
+                options: [
+                  "All strains produce the toxin",
+                  "Type B is most common to cause food poisoning",
+                  "Produced by the organism after infecting the tissue",
+                  "Incubation period is less than 6 hours"
+                ],
+                answer: 3,
+                explanation: ""
+              },
+              {
+                q: "Synergohymenotropic toxins includes:",
+                options: [
+                  "alpha-hemolysin and panton-valentine toxin",
+                  "Beta -hemolysin and panton-valentine toxin",
+                  "gamma-hemolysin and panton-valentine toxin",
+                  "alpha -hemolysin and Betahemolysin"
+                ],
+                answer: 2,
+                explanation: ""
+              },
+              {
+                q: "Single commonest test used to differentiate Staphylococcus aureus from other species of Staphylococcus is:",
+                options: ["Catalase", "Coagulase", "Oxidase", "Gram stain morphology"],
+                answer: 1,
+                explanation: ""
+              },
+              {
+                q: "The commonest site of colonization of Staphylococcus aureus responsible for nosocomial spread of infection is:",
+                options: ["Anterior nares", "Vagina", "C. Axilla", "Perineal skin"],
+                answer: 0,
+                explanation: ""
+              },
+              {
+                q: "Nosocomial spread of Staphylococcus aureus to patients can take place from:",
+                options: ["Hospital staff", "Other patients", "Patient's own endogenous flora", "All of the above"],
+                answer: 3,
+                explanation: ""
+              },
+              {
+                q: "Staphylococci can be differentiated from streptococci by:",
+                options: ["Coagulase test", "Catalase test", "Mannitol fermentation", "Oxidase test"],
+                answer: 1,
+                explanation: ""
+              },
+              {
+                q: "Staphylococcus aureus isolated from an abscess was found to be sensitive to cefoxitin, penicillin and vancomycin. Then preferred antibiotic is:",
+                options: ["Penicillin", "Cloxacillin", "Vancomycin", "Cefoxitin"],
+                answer: 0,
+                explanation: ""
+              },
+              {
+                q: "Methicillin-resistant Staphylococcus aureus (MRSA) is best detected by performing a disk diffusion test against an antibiotic.",
+                options: ["Methicillin", "Cefoxitin", "Oxacillin", "Vancomycin"],
+                answer: 1,
+                explanation: ""
+              },
+              {
+                q: "Staphylococcus aureus isolated from an abscess was found to be resistant to cefoxitin. All of the above can be given for the treatment of this organism isolated, EXCEPT:",
+                options: ["Meropenem", "Vancomycin", "Cotrimoxazole", "Linezolid"],
+                answer: 0,
+                explanation: ""
+              },
+              {
+                q: "Which of the following is the LEAST preferred antimicrobial agent for the treatment of methicillin-sensitive S. aureus (MSSA)?",
+                options: ["Cloxacillin", "Cephalexin", "Cefazolin", "Vancomycin"],
+                answer: 3,
+                explanation: ""
+              },
+              {
+                q: "Which of the following is the mechanism of methicilin-resistant Staphylococcus aureus (MRSA)?",
+                options: [
+                  "Alteration in penicillin-binding protein (PBP) to PBP2a",
+                  "Overproduction of beta lactamase",
+                  "Mutation in porin channel",
+                  "Inhibition of protein synthesis"
+                ],
+                answer: 0,
+                explanation: ""
+              },
+              {
+                q: "About vancomycin resistant Staphylococcus aureus (VRSA), all are true, EXCEPT:",
+                options: [
+                  "VRSA is mediated due to Van gene",
+                  "VISA is due to increased cell wall thickening",
+                  "VRSA is more common than VISA",
+                  "Fitness cost phenomena is seen in VRSA"
+                ],
+                answer: 2,
+                explanation: ""
+              },
+              {
+                q: "The most efficient way to prevent hospital spread of S. aureus is by:",
+                options: [
+                  "Screening of MRSA carriers among hospital staff",
+                  "Treatment of carriers is done by use of topical 2% mupirocin",
+                  "Stoppage of antibiotic misuse in hospitals",
+                  "Ensure proper infection control measures, such as hand hygiene"
+                ],
+                answer: 3,
+                explanation: ""
+              },
+              {
+                q: "Staphylococcus epidermidis, all are true, EXCEPT:",
+                options: [
+                  "Accounts for 75% of coagulase negative staphylococci (CoNS)",
+                  "Phosphatase negative",
+                  "Produces biofilm",
+                  "Causes stitch abscesses"
+                ],
+                answer: 1,
+                explanation: ""
+              },
+
+              // ── Streptococcus ──
+              {
+                q: "Griffith typing used for group A B-hemolytic streptococci is based on:",
+                options: ["M protein", "C carbohydrate antigen", "Peptidoglycan layer", "Capsular polysaccharide antigen"],
+                answer: 0,
+                explanation: ""
+              },
+              {
+                q: "The emm typing is used to classify:",
+                options: ["Family Streptococcaceae", "Beta hemolytic streptococci", "Group A Streptococcus", "Alfa hemolytic streptococci"],
+                answer: 2,
+                explanation: ""
+              },
+              {
+                q: "Which of the following organism produces small (1-2 mm) zone of greenish discoloration surrounding the colonies due to partial lysis of red blood cells?",
+                options: ["Viridans streptococci", "Streptococcus pyogenes", "Staphylococcus aureus", "Pseudomonas aeruginosa"],
+                answer: 0,
+                explanation: ""
+              },
+              {
+                q: "All the following are the cell wall antigens of Streptococcus pyogenes, EXCEPT:",
+                options: ["Lipoteichoic acid", "M protein", "C carbohydrate antigen", "Capsular polysaccharide antigen"],
+                answer: 3,
+                explanation: ""
+              },
+              {
+                q: "Which of the following cell wall component of Streptococcus pyogenes helps in adhesion to pharyngeal epithelial cells?",
+                options: ["Lipoteichoic acid", "M protein", "C-carbohydrate antigen", "Peptidoglycan"],
+                answer: 0,
+                explanation: ""
+              },
+              {
+                q: "All the following are true about streptolysin-O, EXCEPT:",
+                options: [
+                  "Strongly antigenic",
+                  "Oxygen labile and heat labile",
+                  "ASO antibodies are raised following streptococcal pharyngitis",
+                  "ASO antibodies (ASO) are raised following streptococcal pyoderma"
+                ],
+                answer: 3,
+                explanation: ""
+              },
+              {
+                q: "Streptococcal pyrogenic exotoxin is responsible for all of the following, EXCEPT:",
+                options: ["Rheumatic fever", "Scarlet fever", "Necrotizing fasciitis", "Toxic shock syndrome"],
+                answer: 0,
+                explanation: ""
+              },
+              {
+                q: "Which of the following subtype of streptococcal pyrogenic exotoxin (SPE) is coded by bacteriophage?",
+                options: ["SPE-A", "SPE-B", "SPE-C", "All of the above"],
+                answer: 1,
+                explanation: ""
+              },
+              {
+                q: "Which of the following antibody marker is best used for retrospective diagnosis of streptococcal skin infections (pyoderma) and acute glomerulonephritis?",
+                options: [
+                  "Anti-DNase A antibodies",
+                  "Anti-DNase B antibodies",
+                  "Anti-DNase C antibodies",
+                  "Anti-streptolysin antibodies"
+                ],
+                answer: 1,
+                explanation: ""
+              },
+              {
+                q: "Which of the most common bacterial cause of pharyngitis in children?",
+                options: ["Staphylococcus aureus", "Streptococcus pyogenes", "Moraxella catarrhalis", "Coagulase negative Staphylococcus"],
+                answer: 1,
+                explanation: ""
+              },
+              {
+                q: "Streptococcal impetigo (pyoderma): All are true, EXCEPT:",
+                options: [
+                  "Risk factors include young children, warmer months, tropical climates, poor hygiene",
+                  "Most common sites involved are face (nose and mouth) and legs",
+                  "Pustular lesions that coalesce to form honeycomb-like crusts",
+                  "Lesions are painful and associated with fever"
+                ],
+                answer: 3,
+                explanation: ""
+              },
+              {
+                q: "As the lesion of necrotizing fasciitis is likely to be polymicrobial, which of the following selective medium is used to isolate Streptococcus pyogenes?",
+                options: ["Mannitol salt agar", "Crystal violet blood agar", "Ludlam's medium", "Pike's medium"],
+                answer: 1,
+                explanation: ""
+              },
+              {
+                q: "Which of the following statements is WRONG, regarding molecular mimicry between streptococcal antigen and similar human antigen?",
+                options: [
+                  "Cell wall C carbohydrate: Cardiac valves",
+                  "Hyaluronic acid: Synovial fluid",
+                  "Peptidoglycan: Skin lesions",
+                  "Cell wall M protein: Glomerular vascular intima"
+                ],
+                answer: 3,
+                explanation: ""
+              },
+              {
+                q: "Serotyping of Streptococcus pyogenes is based on which of the following protein?",
+                options: ["M protein", "T protein", "R protein", "Carbohydrate antigen"],
+                answer: 0,
+                explanation: ""
+              },
+              {
+                q: "Drug of choice for suppurative infections caused by Streptococcus pyogenes is:",
+                options: ["Penicillin", "Linezolid", "Cotrimoxazole", "Depends upon antibiotic susceptibility test results"],
+                answer: 0,
+                explanation: ""
+              },
+              {
+                q: "Streptococcus pyogenes can be differentiated from S.agalactiae by testing susceptibility to:",
+                options: ["Optochin", "Bacitracin", "Polymyxin", "Novobiocin"],
+                answer: 1,
+                explanation: ""
+              },
+              {
+                q: "CAMP test is useful in identification of:",
+                options: ["Streptococcus pyogenes", "Streptococcus agalactiae", "Streptococcus pneumoniae", "Viridans streptococci"],
+                answer: 1,
+                explanation: ""
+              },
+
+              // ── Anaerobes & Clostridium ──
+              {
+                q: "Optimum conditions for growing anaerobic organisms can be achieved by all of the following, EXCEPT:",
+                options: [
+                  "Mcintosh and Filde's anaerobic jar",
+                  "GasPak system",
+                  "Anoxomat system",
+                  "Candle jar with sealed lid",
+                  "Pre-reduced anaerobically sterilized (PRAS) media"
+                ],
+                answer: 3,
+                explanation: ""
+              },
+              {
+                q: "Anaerobic infection with production of black pigment that fluoresce indicates:",
+                options: ["Prevotellamelaninogenica", "Actinomyces", "Clostridium bifermentans", "Chromobacteriumviolaceum"],
+                answer: 0,
+                explanation: ""
+              },
+              {
+                q: "Antibiotic that is useful in suspected anaerobic infection is:",
+                options: ["Ciprofloxacin", "Clindamycin", "Azithromycin", "Cotrimoxazole"],
+                answer: 1,
+                explanation: ""
+              },
+              {
+                q: "Spindle-shaped bacterial pathogen isolated from pelvic abscess in thioglycollate broth is most likely to be:",
+                options: ["Bacillus species", "Clostridium species", "Corynebacterium species", "Bacteroides species"],
+                answer: 1,
+                explanation: ""
+              },
+              {
+                q: "All of the following are known to produce rapidly spreading edematous myonecrosis following crushing type of injury, EXCEPT:",
+                options: ["Clostridium perfringens", "Clostridium novyi", "Clostridioides difficile", "Clostridium septicum"],
+                answer: 2,
+                explanation: ""
+              },
+              {
+                q: "Which of the following is the causative agent of necrotizing enterocolitis?",
+                options: ["Clostridium septicum", "Clostridium novyi", "Clostridium perfringens", "Clostridium bifermentans"],
+                answer: 2,
+                explanation: ""
+              },
+              {
+                q: "Principle toxin responsible for gas gangrene is:",
+                options: ["Alpha toxin", "Theta toxin", "Beta toxin", "Delta toxin"],
+                answer: 0,
+                explanation: ""
+              },
+              {
+                q: "All the following are the established agents of gas gangrene, EXCEPT:",
+                options: ["Clostridium septicum", "Clostridium novyi", "Clostridium perfringens", "Clostridium bifermentans"],
+                answer: 3,
+                explanation: ""
+              },
+              {
+                q: "The alpha toxin which is the principal virulence factor of Clostridium perfringens gas gangrene mediates by all of the following mechanisms, EXCEPT:",
+                options: [
+                  "Phospholipase C and sphingomyelinase activities",
+                  "It activates the platelet adhesion molecule GpIIb/IIIa",
+                  "Marked vasodilatation",
+                  "Direct suppression of myocardial contractility"
+                ],
+                answer: 2,
+                explanation: ""
+              },
+              {
+                q: "The incubation period of gas gangrene varies depending upon the type of clostridial species involved. What is the incubation period of gas gangrene due to Clostridium perfringens?",
+                options: ["10-48 hours", "2-3 days", "5-6 days", ">7 days"],
+                answer: 0,
+                explanation: ""
+              },
+              {
+                q: "If the gram stain had shown citron bodies, most probable organism would be:",
+                options: ["Clostridium septicum", "Clostridium novyi", "Clostridium perfringens", "Clostridium bifermentans"],
+                answer: 0,
+                explanation: ""
+              },
+              {
+                q: "Treatment of gas gangrene include all of the following, EXCEPT:",
+                options: [
+                  "Immediate wound closure after application of antiseptics",
+                  "Early surgical debridement",
+                  "Penicillin and clindamycin",
+                  "Passive immunization with anti-a-toxin antiserum"
+                ],
+                answer: 0,
+                explanation: ""
+              },
+              {
+                q: "Anaerobic normal oral flora includes all, EXCEPT:",
+                options: ["Actinomyces", "Propionibacterium", "Clostridium perfringens", "Spirochetes"],
+                answer: 1,
+                explanation: ""
+              },
+              {
+                q: "Which of the following is an example of gram-positive non-sporing anaerobes?",
+                options: ["Actinomyces", "Propionibacterium", "Clostridium perfringens", "Bifidobacterium"],
+                answer: 3,
+                explanation: ""
+              },
+              {
+                q: "Which of the following obligate anaerobe maintains the vaginal acidic pH that prevents colonization of pathogens?",
+                options: ["Leptotrichia", "Lactobacillus", "Fusobacterium", "Bacteroides fragilis"],
+                answer: 1,
+                explanation: ""
+              },
+              {
+                q: "Bacteroides fragilis: All are true, EXCEPT:",
+                options: [
+                  "It is the most common commensal in the human intestine.",
+                  "It is the most frequent anaerobe isolated from the clinical specimens",
+                  "Non-sporing, gram-positive obligate anaerobe",
+                  "Capsular polysaccharide is a major virulence factor"
+                ],
+                answer: 2,
+                explanation: ""
+              },
+
+              // ── Leprosy (Mycobacterium leprae) ──
+              {
+                q: "True about leprosy is:",
+                options: [
+                  "It is chronic granulomatous disease",
+                  "Primarily involves skin, peripheral nerves, upper respiratory tract",
+                  "Generation time of the lepra bacilli is 12-13 days",
+                  "Incubation period is 5-7 months"
+                ],
+                answer: 3,
+                explanation: ""
+              },
+              {
+                q: "All are true about multibacillary leprosy, EXCEPT:",
+                options: [
+                  ">5 skin lesions",
+                  "Nerve involvement is seen",
+                  "Slit-skin smear positive for lepra bacilli",
+                  "Lepromin test positive"
+                ],
+                answer: 3,
+                explanation: ""
+              },
+              {
+                q: "Which of the following feature is seen in lepromatous leprosy (LL)?",
+                options: [
+                  "Bacteriological index 0 to 1+",
+                  "Normal humoral immunity",
+                  "Hypoesthesia is an early sign",
+                  "Lepromin test positive"
+                ],
+                answer: 2,
+                explanation: ""
+              },
+              {
+                q: "Ridley-Jopling classification (1966) for leprosy includes all varieties, EXCEPT:",
+                options: ["Lepromatous leprosy", "Indeterminate leprosy", "Borderline leprosy", "Tuberculoid leprosy"],
+                answer: 1,
+                explanation: ""
+              },
+              {
+                q: "Which of the following classification of leprosy includes pure neuritic type?",
+                options: [
+                  "Ridley-Jopling classification",
+                  "Madrid classification",
+                  "Indian classification",
+                  "MacLennan classification"
+                ],
+                answer: 2,
+                explanation: ""
+              },
+              {
+                q: "Which of the following leprosy type has the best prognosis?",
+                options: ["Lepromatous leprosy", "Tuberculoid leprosy", "Borderline leprosy", "Indeterminate leprosy"],
+                answer: 1,
+                explanation: ""
+              },
+              {
+                q: "Which of the following statement is FALSE about lepromatous leprosy?",
+                options: [
+                  "Globi are seen in the smear",
+                  "Skin lesions are many, symmetrical with irregular margin",
+                  "Nerve involvement is consistent finding and occurs early",
+                  "Cell-mediated immunity is compromised"
+                ],
+                answer: 2,
+                explanation: ""
+              },
+              {
+                q: "Which of the following statement is FALSE about the skin lesion seen in tuberculoid leprosy (TT)?",
+                options: [
+                  "One or few skin asymmetrical lesions seen",
+                  "Multiple bacilli are seen in slit skin smear",
+                  "Lesions appear as hypopigmented, annular macules with elevated borders",
+                  "Tendency towards central clearing"
+                ],
+                answer: 1,
+                explanation: ""
+              },
+              {
+                q: "Which of the following statement is FALSE about tuberculoid leprosy (TT)?",
+                options: [
+                  "Cell-mediated immunity is adequate",
+                  "Lepromin test is negative",
+                  "Humoral immune response is normal",
+                  "Patients are least infectious"
+                ],
+                answer: 1,
+                explanation: ""
+              },
+              {
+                q: "Which of the following leprosy stage denotes the early unstable cases with one or two hypopigmented macules and definite sensory impairment; however, the lesions are bacteriologically negative?",
+                options: ["Lepromatous leprosy", "Tuberculoid leprosy", "Borderline leprosy", "Indeterminate leprosy"],
+                answer: 3,
+                explanation: ""
+              },
+              {
+                q: "Which one of the following is the most common mode of transmission of leprosy?",
+                options: [
+                  "Nasal droplet infection",
+                  "Direct person to person contact",
+                  "Fomites such as clothes and linens",
+                  "Procedures like tattooing"
+                ],
+                answer: 0,
+                explanation: ""
+              },
+              {
+                q: "All of the following are true about type 1 lepra reaction, EXCEPT:",
+                options: [
+                  "Seen in borderline leprosy",
+                  "Type III (immune complex-mediated) reaction",
+                  "Manifests as Inflammation of previous lesions, new skin lesions and neuritis",
+                  "Glucocorticoids are drugs of choice to treat"
+                ],
+                answer: 1,
+                explanation: ""
+              },
+              {
+                q: "All the statements are TRUE regarding Lepra reaction typeII, EXCEPT:",
+                options: [
+                  "Seen with lepromatous leprosy",
+                  "Predominant TH2 response seen",
+                  "Crops of painful erythematous papules which become nodular",
+                  "It usually gets subsided after the start of chemotherapy"
+                ],
+                answer: 3,
+                explanation: ""
+              },
+              {
+                q: "True about transmission of leprosy is:",
+                options: [
+                  "Nearly 80% spouses of infected persons develop leprosy",
+                  "Intimate and prolonged contact is necessary",
+                  "Being transmitted through respiratory route, leprosy is highly communicable",
+                  "Children have good innate immunity and are disease is uncommon if infection is contacted"
+                ],
+                answer: 1,
+                explanation: ""
+              },
+              {
+                q: "All statements are true regarding specimen collection for leprosy, EXCEPT:",
+                options: [
+                  "Slit skin smear is the technique is commonly used",
+                  "Total six samples are collected",
+                  "Nasopharyngeal swabs are recommended.",
+                  "Nasal blow specimen is collected in the early morning"
+                ],
+                answer: 2,
+                explanation: ""
+              },
+              {
+                q: "In a slit skin smear for leprosy, the percentage of uniformly stained bacilli out of the total number of bacilli counted is called as:",
+                options: [
+                  "Bacteriological index",
+                  "Morphological index",
+                  "Solid, fragmented granular rod percentage",
+                  "Percentage grade of the smear"
+                ],
+                answer: 1,
+                explanation: ""
+              },
+              {
+                q: "Advantages of cultivating Mycobacterium leprae in foot pads of mouse is all, EXCEPT:",
+                options: [
+                  "Faster, takes 2-3 weeks of time",
+                  "Useful in detecting drug resistance",
+                  "Evaluating the potency of drugs",
+                  "Detects viability of the bacilli"
+                ],
+                answer: 0,
+                explanation: ""
+              }
+            ]
           }
         }
       },
