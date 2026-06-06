@@ -211,12 +211,12 @@ function buildSession(subject, paper, chapter, onlyIdxs) {
   // Each item carries its own shuffled option order.
   return items.map((it) => {
     const order = shuffle(it.q.options.map((_, i) => i));
-    return {
-      idx: it.idx,
-      q: it.q,
-      order,
-      correctPos: order.indexOf(it.q.answer)
-    };
+    // `answer` may be a single index or an array of indices (multiple correct).
+    const answerSet = Array.isArray(it.q.answer) ? it.q.answer : [it.q.answer];
+    const correctPositions = order
+      .map((origIdx, pos) => (answerSet.includes(origIdx) ? pos : -1))
+      .filter((pos) => pos >= 0);
+    return { idx: it.idx, q: it.q, order, correctPositions };
   });
 }
 
@@ -297,14 +297,14 @@ function renderQuiz(subject, paper, chapter, onlyIdxs) {
   function choose(pos, item, optionsWrap, fb) {
     if (state.answered) return;
     state.answered = true;
-    const isCorrect = pos === item.correctPos;
+    const isCorrect = item.correctPositions.includes(pos);
     if (isCorrect) state.correct++;
     else state.missed.push(item.idx);
     recordAnswer(qid(subject, paper, chapter, item.idx), isCorrect);
 
     [...optionsWrap.children].forEach((btn, p2) => {
       btn.disabled = true;
-      if (p2 === item.correctPos) {
+      if (item.correctPositions.includes(p2)) {
         btn.classList.add("correct");
         btn.appendChild(el("span", { class: "mark" }, "✓"));
       } else if (p2 === pos) {
@@ -313,9 +313,12 @@ function renderQuiz(subject, paper, chapter, onlyIdxs) {
       }
     });
 
+    const multi = item.correctPositions.length > 1;
     fb.className = "feedback show " + (isCorrect ? "ok" : "no");
     fb.innerHTML = "";
-    fb.appendChild(el("div", {}, isCorrect ? "✅ Correct!" : "❌ Not quite."));
+    let head = isCorrect ? "✅ Correct!" : "❌ Not quite.";
+    if (multi) head += " (this question has more than one correct answer)";
+    fb.appendChild(el("div", {}, head));
     if (item.q.explanation) {
       fb.appendChild(el("div", { class: "why", html: `<b>Why:</b> ${item.q.explanation}` }));
     }
