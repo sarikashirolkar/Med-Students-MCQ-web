@@ -78,7 +78,7 @@ function parseHash() {
 }
 
 function render() {
-  const [subject, paper, chapter] = parseHash();
+  const [subject, paper, chapter, mode] = parseHash();
   app.innerHTML = "";
   window.scrollTo(0, 0);
 
@@ -88,7 +88,10 @@ function render() {
   if (!QUIZ_DATA[subject].papers[paper]) return renderNotFound();
   if (!chapter) return renderChapters(subject, paper);
   if (!QUIZ_DATA[subject].papers[paper].chapters[chapter]) return renderNotFound();
-  return renderQuiz(subject, paper, chapter);
+  if (!mode) return renderModeChooser(subject, paper, chapter);
+  if (mode === "study") return renderStudy(subject, paper, chapter);
+  if (mode === "test") return renderQuiz(subject, paper, chapter);
+  return renderNotFound();
 }
 
 /* ---------- views ---------- */
@@ -182,7 +185,105 @@ function renderChapters(subject, paper) {
       ])
     );
   });
-  app.append(pageHead(p.name, "Pick a chapter to start the quiz."), grid);
+  app.append(pageHead(p.name, "Pick a chapter to continue."), grid);
+}
+
+function chapterCrumbs(subject, paper, chapter) {
+  const s = QUIZ_DATA[subject];
+  const p = s.papers[paper];
+  const ch = p.chapters[chapter];
+  return [
+    { label: "Home", href: "#/" },
+    { label: s.name, href: `#/${subject}` },
+    { label: p.name, href: `#/${subject}/${paper}` },
+    { label: ch.name, href: `#/${subject}/${paper}/${chapter}` }
+  ];
+}
+
+function renderModeChooser(subject, paper, chapter) {
+  const ch = QUIZ_DATA[subject].papers[paper].chapters[chapter];
+  const crumbs = chapterCrumbs(subject, paper, chapter);
+  crumbs[crumbs.length - 1] = { label: ch.name }; // current page, no link
+  setCrumbs(crumbs);
+
+  const base = `#/${subject}/${paper}/${chapter}`;
+  const grid = el("div", { class: "grid" });
+  grid.append(
+    el("a", { class: "card", href: `${base}/study` }, [
+      el("span", { class: "emoji" }, "📖"),
+      el("span", { class: "title" }, "Study"),
+      el("span", { class: "sub" }, "Read every question with the answer shown")
+    ]),
+    el("a", { class: "card", href: `${base}/test` }, [
+      el("span", { class: "emoji" }, "📝"),
+      el("span", { class: "title" }, "Take Test"),
+      el("span", { class: "sub" }, "Shuffled, scored quiz with instant feedback")
+    ])
+  );
+  app.append(
+    pageHead(ch.name, `${ch.questions.length} questions · how do you want to practise?`),
+    grid
+  );
+}
+
+function studyQuestionCard(q, label) {
+  const answerSet = Array.isArray(q.answer) ? q.answer : [q.answer];
+  const opts = el("div", { class: "study-options" });
+  q.options.forEach((text, oi) => {
+    const correct = answerSet.includes(oi);
+    opts.appendChild(
+      el("div", { class: "study-option" + (correct ? " correct" : "") }, [
+        el("span", { class: "key" }, OPT_KEYS[oi] + "."),
+        el("span", {}, text),
+        correct ? el("span", { class: "mark" }, "✓") : null
+      ])
+    );
+  });
+  const card = el("div", { class: "study-card" }, [
+    el("p", { class: "study-q" }, `${label} ${q.q}`),
+    opts
+  ]);
+  if (q.explanation) {
+    card.appendChild(el("div", { class: "study-why", html: `<b>Why:</b> ${q.explanation}` }));
+  }
+  return card;
+}
+
+// Study shows ALL chapters of the paper, one after another (whole-paper cram sheet).
+function renderStudy(subject, paper, chapter) {
+  const p = QUIZ_DATA[subject].papers[paper];
+  const crumbs = chapterCrumbs(subject, paper, chapter);
+  crumbs[crumbs.length - 1].href = `#/${subject}/${paper}/${chapter}`;
+  setCrumbs(crumbs.concat({ label: "Study" }));
+
+  app.append(pageHead(`${p.name} — Study`,
+    "All chapters together. Correct answers are marked in green, in original order — just like the exam."));
+
+  const chapters = Object.entries(p.chapters).filter(([, ch]) => ch.questions.length);
+  if (!chapters.length) {
+    app.append(el("div", { class: "empty" }, "No questions to study here yet."));
+    return;
+  }
+
+  // Quick jump-to-chapter links.
+  const nav = el("div", { class: "study-nav" });
+  chapters.forEach(([key, ch]) => {
+    nav.appendChild(el("a", { class: "study-chip", href: `#chapter-${key}` },
+      `${ch.emoji || "📘"} ${ch.name}`));
+  });
+  app.append(nav);
+
+  chapters.forEach(([key, ch]) => {
+    app.append(el("h2", { class: "study-section", id: `chapter-${key}` },
+      `${ch.emoji || "📘"} ${ch.name}`));
+    const list = el("div", { class: "study-list" });
+    ch.questions.forEach((q, i) => list.appendChild(studyQuestionCard(q, `${i + 1}.`)));
+    app.append(list);
+  });
+
+  app.append(el("div", { class: "btn-row" }, [
+    el("a", { class: "btn btn-ghost", href: `#/${subject}/${paper}/${chapter}` }, "← Back")
+  ]));
 }
 
 function renderNotFound() {

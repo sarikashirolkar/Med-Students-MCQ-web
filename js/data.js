@@ -550,13 +550,9 @@ const QUIZ_DATA = {
                 options: ["Nested PCR", "Hot-start PCR", "High-fidelity PCR", "Arbitrary primed PCR"],
                 answer: 0,
                 explanation: ""
-              }
-            ]
-          },
-          "immunology": {
-            name: "Immunology",
-            emoji: "🛡️",
-            questions: [
+              },
+
+              // ── Immunity & host defence ──
               {
                 q: "Which of the following statements is TRUE regarding passive immunity?",
                 options: [
@@ -608,6 +604,11 @@ const QUIZ_DATA = {
                 explanation: ""
               }
             ]
+          },
+          "immunology": {
+            name: "Immunology",
+            emoji: "🛡️",
+            questions: []
           },
           "cvs-blood": {
             name: "CVS & Blood",

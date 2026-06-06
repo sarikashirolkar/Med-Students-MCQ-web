@@ -17,7 +17,14 @@ Home → Micro · Patho · Pharma        (only Micro is live)
               Skin & Soft Tissue
 ```
 
-## How the game helps you *remember* (not byheart)
+After picking a chapter you choose a mode:
+
+- **📖 Study** — a read-through cram sheet of **every chapter in the paper**, one after
+  another, with the correct answer marked in green and questions kept in their original
+  order (so it matches how they appear in the exam).
+- **📝 Take Test** — the scored quiz below.
+
+## How the test helps you *remember* (not byheart)
 
 - **Shuffled options & questions** — the position of the right answer changes every
   time, so you can't memorise "the answer is C".

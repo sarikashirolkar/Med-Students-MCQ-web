@@ -291,6 +291,73 @@ body {
 .tag-mastery.learning { background: #fff5e6; color: var(--amber); }
 .tag-mastery.mastered { background: var(--green-soft); color: var(--green); }
 
+/* Study (answer-key) mode */
+.study-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 26px;
+}
+.study-chip {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--brand);
+  background: #eef3ff;
+  border: 1px solid #dbe5ff;
+  padding: 6px 12px;
+  border-radius: 999px;
+  text-decoration: none;
+}
+.study-chip:hover { background: #e0eaff; }
+
+.study-section {
+  font-size: 1.25rem;
+  letter-spacing: -0.02em;
+  margin: 34px 0 14px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--line);
+  scroll-margin-top: 70px;
+}
+.study-section:first-of-type { margin-top: 8px; }
+
+.study-list { display: flex; flex-direction: column; gap: 14px; }
+
+.study-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 20px 22px;
+}
+.study-q { font-weight: 600; font-size: 1.05rem; line-height: 1.45; margin: 0 0 14px; }
+.study-options { display: flex; flex-direction: column; gap: 8px; }
+.study-option {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  padding: 10px 14px;
+  border-radius: 10px;
+  background: #fafbff;
+  border: 1.5px solid var(--line);
+  font-size: 0.97rem;
+  line-height: 1.4;
+}
+.study-option .key { font-weight: 700; color: var(--muted); min-width: 18px; }
+.study-option.correct {
+  background: var(--green-soft);
+  border-color: var(--green);
+  font-weight: 600;
+}
+.study-option.correct .key { color: var(--green); }
+.study-option .mark { margin-left: auto; color: var(--green); font-weight: 700; }
+.study-why {
+  margin-top: 12px;
+  padding: 10px 14px;
+  background: #f7f9ff;
+  border-radius: 10px;
+  font-size: 0.9rem;
+  color: var(--ink);
+}
+
 @media (max-width: 520px) {
   .topbar { padding: 12px 16px; }
   .app { padding: 24px 16px 50px; }
