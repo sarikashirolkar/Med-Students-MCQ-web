@@ -608,7 +608,598 @@ const QUIZ_DATA = {
           "immunology": {
             name: "Immunology",
             emoji: "🛡️",
-            questions: []
+            questions: [
+              // ── Antigens & haptens ──
+              {
+                q: "All the following statements are TRUE regarding haptens EXCEPT:",
+                options: [
+                  "They require additional carrier proteins",
+                  "Simple haptens have only one antibody binding site",
+                  "Complex haptens are non-precipitating",
+                  "Simple haptens can inhibit precipitation"
+                ],
+                answer: 2,
+                explanation: ""
+              },
+              {
+                q: "Conformational epitope is:",
+                options: [
+                  "A product of a linear peptide sequence",
+                  "Produced by different sites of the peptide chain",
+                  "Recognised by T cells",
+                  "Also called sequential epitope"
+                ],
+                answer: 1,
+                explanation: ""
+              },
+              {
+                q: "Which of the following is most immunogenic?",
+                options: ["Proteins", "Lipids", "Polysaccharides", "Monosaccharides"],
+                answer: 0,
+                explanation: ""
+              },
+              {
+                q: "The main aim of an adjuvant is to increase:",
+                options: ["Distribution", "Absorption", "Antigenicity", "Metabolism."],
+                answer: 2,
+                explanation: ""
+              },
+              {
+                q: "Isospecificity depends on:",
+                options: [
+                  "Antigens present in some members of the same species",
+                  "Antigens present in all members of the same species",
+                  "Closely related antigens in biologically different species",
+                  "Self-antigens that are not ordinarily antigenic"
+                ],
+                answer: 0,
+                explanation: ""
+              },
+
+              // ── Immunoglobulins ──
+              {
+                q: "A single Ig molecule contains:",
+                options: [
+                  "1 light chain, 1 heavy chain",
+                  "2 light chains, 1 heavy chain",
+                  "2 light chains, 2 heavy chains",
+                  "1 light chain, 2 heavy chains"
+                ],
+                answer: 2,
+                explanation: ""
+              },
+              {
+                q: "The earliest immunoglobulin synthesised by the fetus is:",
+                options: ["IgG", "IgA", "IgE", "IgM"],
+                answer: 3,
+                explanation: ""
+              },
+              {
+                q: "The antigen combining site present on the antibody molecule is called:",
+                options: ["Epitope", "Paratope", "Hapten", "Carrier protein"],
+                answer: 1,
+                explanation: ""
+              },
+              {
+                q: "Which of the Igs is normally transported across the placenta?",
+                options: ["IgA", "IgM", "IgG", "IgE"],
+                answer: 2,
+                explanation: ""
+              },
+              {
+                q: "All the following statements are TRUE regarding IgA EXCEPT:",
+                options: [
+                  "Has a monomeric structure",
+                  "Molecular weight is 400,000 kDa",
+                  "Glycopeptide bond",
+                  "Protects against poliovirus"
+                ],
+                answer: 0,
+                explanation: ""
+              },
+              {
+                q: "Which Ig class is involved in type I hypersensitivity?",
+                options: ["IgA", "IgE", "IgM", "IgG"],
+                answer: 1,
+                explanation: ""
+              },
+              {
+                q: "Which Ig class has the maximum intravascular distribution?",
+                options: ["IgA", "IgG", "IgE", "IgM"],
+                answer: 3,
+                explanation: ""
+              },
+              {
+                q: "Which of the following Igs is heat-labile?",
+                options: ["IgA", "IgE", "IgD", "IgM"],
+                answer: 1,
+                explanation: ""
+              },
+              {
+                q: "B cell receptors are constituted by:",
+                options: ["IgG and IgM", "IgE and IgM", "IgD and IgG", "IgM and IgD"],
+                answer: 3,
+                explanation: ""
+              },
+
+              // ── Antigen–antibody reactions ──
+              {
+                q: "All the following forces are involved in antigen–antibody reactions EXCEPT:",
+                options: ["Van der Waals forces", "Electrostatic bond", "Hydrogen bond", "Covalent bond"],
+                answer: 3,
+                explanation: ""
+              },
+              {
+                q: "Avidity is highest in:",
+                options: ["IgA", "IgM", "IgG", "IgE"],
+                answer: 1,
+                explanation: ""
+              },
+              {
+                q: "Prozone phenomenon is due to:",
+                options: ["Antigen excess", "Antibody excess", "Both antigen and antibody excess", "None of these"],
+                answer: 1,
+                explanation: ""
+              },
+              {
+                q: "All the following are TRUE about precipitation reactions EXCEPT:",
+                options: [
+                  "Reaction of soluble antigen with antibody",
+                  "Very sensitive for the detection of antigens",
+                  "Elek test is an example",
+                  "Coombs test is an example"
+                ],
+                answer: 3,
+                explanation: ""
+              },
+              {
+                q: "A 25-year-old man with a history of multiple sexual partners is admitted with unexplained fever, loss of weight and persistent diarrhea for the past 6 months. His blood is drawn after counselling to detect antibody against HIV. The laboratory will test using ELISA. Which of the following statements is true regarding ELISA?",
+                options: [
+                  "It uses horseradish peroxidase as the substrate",
+                  "It is performed in a microtiter plate having 46 wells",
+                  "Direct ELISA is used for detecting antibody in test serum",
+                  "Indirect ELISA can be used to detect both antigen and antibody in serum"
+                ],
+                answer: 3,
+                explanation: ""
+              },
+              {
+                q: "Rose-Waaler test is an example of:",
+                options: [
+                  "Latex agglutination test",
+                  "Reversed passive agglutination",
+                  "Passive hemagglutination",
+                  "Co-agglutination test."
+                ],
+                answer: 2,
+                explanation: ""
+              },
+              {
+                q: "Chemiluminescence refers to a clinical reaction emitting energy in the form of:",
+                options: ["Electric current", "Chemical reaction", "Photons", "Ionising radiation"],
+                answer: 1,
+                explanation: ""
+              },
+              {
+                q: "Widal test is a type of:",
+                options: [
+                  "Precipitation reaction",
+                  "Agglutination reaction",
+                  "Neutralisation test",
+                  "Complement fixation test"
+                ],
+                answer: 1,
+                explanation: ""
+              },
+              {
+                q: "Which of the following is the correct flow diagram to depict the principle of ELISA?",
+                options: [
+                  "Ag-Ab complex-enzyme + substrate-----> activates chromogen -----> colour change ----> detection by spectrophotometry",
+                  "Ag-Ab + substrate ----> activates enzyme-chromogen -----> colour change ----> detection by spectrophotometry",
+                  "Ag-Ab complex-substrate -----> activates enzyme ----> add chromogen -----> colour change ----> detection by spectrophotometry",
+                  "Ag-Ab complex-enzyme -----> activates chromogen -----> colour change ----> detection by spectrophotometry"
+                ],
+                answer: 0,
+                explanation: ""
+              },
+
+              // ── Complement ──
+              {
+                q: "All the statements are TRUE regarding classical pathway EXCEPT:",
+                options: [
+                  "Activated by antigen-antibody complex",
+                  "Calcium ions are required for activation",
+                  "C3 convertase has C4b2b",
+                  "C5 convertase has C4b2a3b"
+                ],
+                answer: 2,
+                explanation: ""
+              },
+              {
+                q: "Individuals are more prone to gonococcal infection if there is a deficiency of:",
+                options: ["C1 inhibitor", "C1 and C2", "C5-C8", "C3b inactivator"],
+                answer: 2,
+                explanation: ""
+              },
+              {
+                q: "Which of the following is an activator of the alternate pathway?",
+                options: ["DNA", "C-reactive protein", "Bacterial endotoxins", "Trypsin-like enzymes"],
+                answer: 2,
+                explanation: ""
+              },
+              {
+                q: "In the alternate pathway, C3 pro-activator is:",
+                options: ["Factor D", "Factor 1", "Factor H", "Factor B"],
+                answer: 3,
+                explanation: ""
+              },
+              {
+                q: "Biosynthesis of complements takes place at the following sites in the body EXCEPT:",
+                options: ["Macrophages", "Spleen", "Liver", "Bone marrow"],
+                answer: 3,
+                explanation: ""
+              },
+              {
+                q: "Which among the following is not a function of complement?",
+                options: ["Phagocytosis", "Inflammatory response", "Antigen presentation", "Immune clearance"],
+                answer: 2,
+                explanation: ""
+              },
+              {
+                q: "Which of the following acts as an inhibitor of complement?",
+                options: ["Factor P", "Factor H", "C4 binding protein", "Anaphylatoxininactivator"],
+                answer: 0,
+                explanation: ""
+              },
+              {
+                q: "Collagen vascular diseases are associated with the deficiency of:",
+                options: ["C1,C2,C3", "C1, C2, C4", "C1,C5,C8", "C2, C3, C4"],
+                answer: 2,
+                explanation: ""
+              },
+              {
+                q: "A 7-year-old boy presents with disseminated Neisseria infection. His other parameters are normal but the pediatrician suspects complement deficiency. Such infection is commonly associated with deficiency of:",
+                options: ["Properdin", "Factor D", "C1 inhibitory deficiency", "Membrane attack complex"],
+                answer: 3,
+                explanation: ""
+              },
+              {
+                q: "The membrane attack complex consists of:",
+                options: ["Colicins", "C3b3b,Bb", "C5b,6,7,8,9", "Properdin"],
+                answer: 2,
+                explanation: ""
+              },
+
+              // ── Immune response & cytokines ──
+              {
+                q: "Which of the following is the function of antibody-mediated immunity?",
+                options: [
+                  "Immunological surveillance",
+                  "Graft-versus-host reaction",
+                  "Protection against fungi",
+                  "Extracellular bacterial pathogens"
+                ],
+                answer: 3,
+                explanation: ""
+              },
+              {
+                q: "Which among the following is TRUE of primary immune response?",
+                options: [
+                  "It is carried out by memory B cells",
+                  "The predominant antibody is IgG",
+                  "Peak response is in 3–5 days",
+                  "A high dose of antigen is required"
+                ],
+                answer: 3,
+                explanation: ""
+              },
+              {
+                q: "Which of the following statements is TRUE for optimal antibody production?",
+                options: [
+                  "Large particulate antigens should be administered in tissues",
+                  "IgA production is better when antigens are administered parentally",
+                  "Antibody production increases with increase in dosage",
+                  "Simultaneous administration of multiple antigens has no effect"
+                ],
+                answer: 0,
+                explanation: ""
+              },
+              {
+                q: "IL-1 produces:",
+                options: [
+                  "T lymphocyte activation",
+                  "Delayed wound healing",
+                  "Increased pain perception",
+                  "Decreased PMN release from the bone marrow"
+                ],
+                answer: 0,
+                explanation: ""
+              },
+              {
+                q: "IL-4 is primarily produced by:",
+                options: ["Macrophages", "B cells", "T cells", "Fibroblasts"],
+                answer: 2,
+                explanation: ""
+              },
+              {
+                q: "Which of the following is a pro-inflammatory marker?",
+                options: ["IL-4", "IL-9", "IL-11", "IL-17"],
+                answer: 3,
+                explanation: ""
+              },
+              {
+                q: "Which of the following is an important endogenous pyrogen?",
+                options: ["IL-1", "IL-2", "IL-3", "IL-4"],
+                answer: 0,
+                explanation: ""
+              },
+              {
+                q: "Cytokines are:",
+                options: [
+                  "Hormone-like substances, that are active even at minute concentrations",
+                  "They are produced by endocrine glands",
+                  "Regulated by exogenous stimuli such as antigens only",
+                  "They act on the cells away from those producing them"
+                ],
+                answer: 0,
+                explanation: ""
+              },
+              {
+                q: "Which of the following is true regarding cell-mediated immunity?",
+                options: [
+                  "It is involved in type 1 hypersensitivity",
+                  "It has a minimal role in early rejection in a pre-exposed person",
+                  "It plays a role in the classical pathway of complement activation",
+                  "It plays a major role in homograft rejection and graft-versus-host reaction"
+                ],
+                answer: 3,
+                explanation: ""
+              },
+              {
+                q: "Interferon gamma, a type of cytokine, has the following function:",
+                options: [
+                  "It activates B cells to produce IgG",
+                  "It has antiviral activity",
+                  "It is used in the treatment of leukemia",
+                  "It is secreted by macrophages"
+                ],
+                answer: 0,
+                explanation: ""
+              },
+
+              // ── Hypersensitivity ──
+              {
+                q: "All the following are important steps in the mechanism of anaphylaxis EXCEPT:",
+                options: [
+                  "Activation by the allergen-specific Th2 cells",
+                  "Secretion of IgE by plasma cells",
+                  "Crosslinking of the cell-bound IgE",
+                  "Activation of complements"
+                ],
+                answer: 3,
+                explanation: ""
+              },
+              {
+                q: "RAST is used to detect:",
+                options: [
+                  "Type 1 hypersensitivity",
+                  "Type II hypersensitivity",
+                  "Type III hypersensitivity",
+                  "Type IV hypersensitivity"
+                ],
+                answer: 0,
+                explanation: ""
+              },
+              {
+                q: "Which of the following is NOT a primary mediator of anaphylaxis?",
+                options: ["5-HT", "Leukotrienes", "Platelet activating factor", "Heparin"],
+                answer: 2,
+                explanation: ""
+              },
+              {
+                q: "Delayed hypersensitivity can be transferred by:",
+                options: ["Lymphocytes", "Neutrophils", "Macrophages", "Eosinophils"],
+                answer: 0,
+                explanation: ""
+              },
+              {
+                q: "Tuberculin test is which type of hypersensitivity reaction?",
+                options: ["IgE type", "Cytolytic and cytotoxic type", "Immune complex", "Delayed type"],
+                answer: 3,
+                explanation: ""
+              },
+              {
+                q: "One type of immune complex-mediated hypersensitivity is:",
+                options: [
+                  "Arthus reaction",
+                  "Schwartzman reaction",
+                  "Schultz–Dale phenomenon",
+                  "Passive cutaneous anaphylaxis"
+                ],
+                answer: 0,
+                explanation: ""
+              },
+              {
+                q: "Which among the following is a reagin-dependent hypersensitivity?",
+                options: ["Type I", "Type II", "Type III", "Type IV"],
+                answer: 0,
+                explanation: ""
+              },
+              {
+                q: "A 5-year-old girl presents with complaints of a recurrent history of breathlessness and wheezing. Detailed history reveals similar episodes in the past few years usually around February and March. A clinical diagnosis of bronchial asthma is made. What type of hypersensitivity reaction is bronchial asthma?",
+                options: ["Type I", "Type II", "Type III", "Type IV"],
+                answer: 0,
+                explanation: ""
+              },
+
+              // ── Immunodeficiency ──
+              {
+                q: "All the following are features of Bruton's disease EXCEPT:",
+                options: [
+                  "The disease is evident after six months of life",
+                  "Tonsils and adenoids are atrophic",
+                  "Live vaccines should not be given",
+                  "Patient presents with recurrent viral infections"
+                ],
+                answer: 3,
+                explanation: ""
+              },
+              {
+                q: "Which of the following options is FALSE about late-onset hypogammaglobulinemia?",
+                options: [
+                  "Disease manifests after 15 years of age",
+                  "Low level of total immunoglobulin",
+                  "Recurrent bacterial infections",
+                  "Also known as selective immunoglobulin immunodeficiency"
+                ],
+                answer: 3,
+                explanation: ""
+              },
+              {
+                q: "Which selective immunoglobulin deficiency is associated with steatorrhea?",
+                options: ["IgA deficiency", "IgG deficiency", "IgM deficiency", "IgD deficiency"],
+                answer: 0,
+                explanation: ""
+              },
+              {
+                q: "Which of the following diseases is NOT a severe combined immunodeficiency?",
+                options: [
+                  "Wiskott–Aldrich syndrome",
+                  "Job syndrome",
+                  "Ataxia telangiectasia",
+                  "Adenosine deaminase (ADA) deficiency"
+                ],
+                answer: 1,
+                explanation: ""
+              },
+              {
+                q: "All the following are features of Wiskott–Aldrich syndrome EXCEPT:",
+                options: [
+                  "Raised serum IgM",
+                  "Absence of isohemagglutinins",
+                  "Serum IgG levels are normal",
+                  "Serum IgE levels are raised"
+                ],
+                answer: 0,
+                explanation: ""
+              },
+              {
+                q: "Which is found is DiGeorge syndrome?",
+                options: ["Tetany", "Eczema", "Absent B and T cells", "Total absence of T cells"],
+                answer: 0,
+                explanation: ""
+              },
+              {
+                q: "Hereditary angioneurotic edema is due to the deficiency of:",
+                options: ["C1", "C8", "C1 inhibitor", "C3 convertase"],
+                answer: 2,
+                explanation: ""
+              },
+              {
+                q: "A child presents with frequent sinopulmonary infection and telangiectasia of the face. Deficiency of which of the following immunoglobulin class should be investigated?",
+                options: ["IgM", "IgG1", "IgG3", "IgA"],
+                answer: 3,
+                explanation: ""
+              },
+              {
+                q: "In lazy leucocyte syndrome:",
+                options: [
+                  "There is a defect in neutrophil mobility",
+                  "There is peripheral leucopenia",
+                  "Both (a) and (b) are true",
+                  "Both (a) and (b) are false"
+                ],
+                answer: 2,
+                explanation: ""
+              },
+              {
+                q: "Chronic granulomatous disease is a:",
+                options: ["B cell defect", "T cell defect", "Complement defect", "Disorder of phagocytosis"],
+                answer: 3,
+                explanation: ""
+              },
+
+              // ── Transplantation immunology ──
+              {
+                q: "Heterotopic graft refers to:",
+                options: [
+                  "Graft placed in an anatomically normal site",
+                  "Graft placed in an anatomically abnormal site",
+                  "Graft which acts as scaffolding",
+                  "Graft from a cadaver"
+                ],
+                answer: 1,
+                explanation: ""
+              },
+              {
+                q: "Graft between two genetically non-identical members of the same species is called:",
+                options: ["Autograft", "Isograft", "Allograft", "Xenograft"],
+                answer: 2,
+                explanation: ""
+              },
+              {
+                q: "Hyperacute rejection is due to:",
+                options: ["Pre-formed antibodies", "Lymphokines", "In situ antibody formation", "All of these"],
+                answer: 0,
+                explanation: ""
+              },
+              {
+                q: "Immunological enhancement results in:",
+                options: [
+                  "Resistance to infections",
+                  "Hyperacute graft rejection",
+                  "Slowing down of graft rejection",
+                  "Enhanced functioning of thymus"
+                ],
+                answer: 2,
+                explanation: ""
+              },
+              {
+                q: "In transplant reaction:",
+                options: [
+                  "White graft response is due to delayed rejection",
+                  "Chronic graft rejection responds well to corticosteroids",
+                  "Acute rejection occurs within 10 days of transplant",
+                  "All of these"
+                ],
+                answer: 2,
+                explanation: ""
+              },
+              {
+                q: "Runt disease is:",
+                options: [
+                  "Graft rejection",
+                  "Graft-versus-host reaction",
+                  "Deficient T cell function",
+                  "Complement deficiency"
+                ],
+                answer: 1,
+                explanation: ""
+              },
+              {
+                q: "All the following are used as immunosuppressive agents EXCEPT:",
+                options: ["Azathioprine", "Methotrexate", "Levamisole", "Cyclophosphamide"],
+                answer: 2,
+                explanation: ""
+              },
+              {
+                q: "Antigens that participate in graft rejection are called:",
+                options: ["Histocompatibility antigens", "Alloantigens", "Heterologous antigens", "Haptens"],
+                answer: 0,
+                explanation: ""
+              },
+              {
+                q: "Acute graft rejection is characterised by:",
+                options: [
+                  "Rejection of graft within hours of implantation",
+                  "Appearance of \"White graft response\"",
+                  "Damage which occurs due to preformed anti-donor antibodies",
+                  "Accumulation of lymphocytes, plasma cells, macrophages and neutrophils, leading to endothelial damage"
+                ],
+                answer: [1, 3],
+                explanation: ""
+              }
+            ]
           },
           "cvs-blood": {
             name: "CVS & Blood",
