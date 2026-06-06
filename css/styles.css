@@ -208,6 +208,7 @@ body {
   font-weight: 600;
   line-height: 1.45;
   margin: 0 0 20px;
+  white-space: pre-line;
 }
 .options { display: flex; flex-direction: column; gap: 12px; }
 .option {
@@ -328,7 +329,7 @@ body {
   border-radius: var(--radius);
   padding: 20px 22px;
 }
-.study-q { font-weight: 600; font-size: 1.05rem; line-height: 1.45; margin: 0 0 14px; }
+.study-q { font-weight: 600; font-size: 1.05rem; line-height: 1.45; margin: 0 0 14px; white-space: pre-line; }
 .study-options { display: flex; flex-direction: column; gap: 8px; }
 .study-option {
   display: flex;

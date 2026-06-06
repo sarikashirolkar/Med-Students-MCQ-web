@@ -2035,7 +2035,276 @@ const QUIZ_DATA = {
           "git-hepatobiliary": {
             name: "GIT & Hepatobiliary",
             emoji: "🩺",
-            questions: []
+            questions: [
+              {
+                q: "A tourist gives history of consuming raw selfish followed by watery diarrhea, Gram staining reveals, Gram-negative, TCBS green color colonies seen. The most likely bacteria is-",
+                options: ["Campylobacter jejuni", "Vibrio parahaemolyticus", "Enterotoxigenic E. coli", "Giardia lamblia"],
+                answer: 1,
+                explanation: ""
+              },
+              {
+                q: "A 35-year-old male patient with history of step ladder fever, diarrhoea and constipation for 5 days presents to a clinic with altered sensorium. Blood culture reveals Non lactose fermenting colonies. The drugs used in empirical therapy are all except-",
+                options: ["Ceftriaxone", "Ciprofloxacin", "Azithromycin", "Chloramphenicol"],
+                answer: 3,
+                explanation: ""
+              },
+              {
+                q: "A 25-year-old woman working in a tea-estate presents to OPD with pallor, dysponea and pruritic serpiginous skin rash on the ankle. The most likely parasite is-",
+                options: ["Hookworm", "Roundworm", "T.trichiura", "H.nana"],
+                answer: 0,
+                explanation: ""
+              },
+              {
+                q: "A middle-aged man presents with fever and abdominal tenderness, US abdomen shows hypoechoic lesion in right lobe of liver with homogenous content. The probable lab diagnosis is-",
+                options: ["Liver abscess", "Hepatoma", "Hydatid cyst", "Secondaries"],
+                answer: 0,
+                explanation: ""
+              },
+              {
+                q: "A 25-year-old man presents with high grade fever and right abdominal tenderness; US abdomen shows hepatomegaly with hypoechoic lesion in right lobe of liver with homogenous content. Aspirate shows anchovy sauce pus. The probable lab diagnosis is-",
+                options: ["Amoebic liver abscess", "Hepatatoma", "Hydatid cyst", "Secondaries"],
+                answer: 0,
+                explanation: ""
+              },
+              {
+                q: "A 25-year-old woman presents with pain right abdominal region, US abdomen shows space occupying cystic lesion in right lobe of liver On surgical excision three layered cyst with brood capsule was seen. The probable lab diagnosis is-",
+                options: ["Amoebic liver abscess", "Toxocara", "Hydatid cyst", "Fasciola"],
+                answer: 2,
+                explanation: ""
+              },
+              {
+                q: "A person with portal hypertension, hepatomegaly, splenomegaly shows Symmers pipestem fibrosis in biliary tract. Most likely diagnosis is-",
+                options: ["S. mansoni", "S. hematobium", "F. buski", "P. westermanii"],
+                answer: 0,
+                explanation: ""
+              },
+              {
+                q: "In a summer camp 10 children developed fever, nausea, vomiting for 2-3 days. 4 had icterus in the next 6days. The most probable diagnosis is –",
+                options: ["Hepatitis B", "Hepatitis C", "Hepatitis A", "Hepatitis D"],
+                answer: 2,
+                explanation: ""
+              },
+              {
+                q: "Assertion & Reasoning:\nAssertion (A): V. cholerae causes 'Rice water stool\"\nReasoning (R): Cholera toxin leads to increased cAMP",
+                options: [
+                  "Both A & R are true, and R is the correct explanation of A",
+                  "Both A & R are true, and R is not the correct explanation of A",
+                  "A is true, but R is false",
+                  "A is false, but R is true"
+                ],
+                answer: 0,
+                explanation: ""
+              },
+              {
+                q: "Parasite causing B 12 deficiency anemia is-",
+                options: ["D. latum", "A. duodenale", "N. americanus", "T. trichiuria"],
+                answer: 0,
+                explanation: ""
+              },
+              {
+                q: "Multiple Completion type-\nWhich of the following are characteristics of HBV-\n1. DNA virus\n2. Enveloped virus\n3. Blood borne virus\n4. Oncogenic virus",
+                options: [
+                  "Only 1,2,3 are correct",
+                  "Only 1 & 3 are correct",
+                  "Only 2 & 4 are correct",
+                  "All four are correct"
+                ],
+                answer: 3,
+                explanation: ""
+              },
+              {
+                q: "Multiple Completion type-\nA 20-year-old has undergone screening for blood borne infection. Which is an antigen for HBV infection?\n1. HBsAg   2. NS1 Ag   3. P-17 Ag   4. HeAg",
+                options: [
+                  "1 & 2 are correct",
+                  "1 & 4 are correct",
+                  "2 & 3 are correct",
+                  "All four are correct"
+                ],
+                answer: 1,
+                explanation: ""
+              },
+              {
+                q: "Assertion & Reasoning:\nAssertion (A): Hookworm causes anemia\nReasoning (R): Hookworm leads to reduced iron absorption",
+                options: [
+                  "Both A & R are true, and R is the correct explanation of A",
+                  "Both A & R are true, and R is not the correct explanation of A",
+                  "A is true, but R is false",
+                  "A is false, but R is true"
+                ],
+                answer: 2,
+                explanation: ""
+              },
+              {
+                q: "30-year-old tea estate worker has anemia following hookworm infection, The most likely pathogenesis is-",
+                options: ["Megaloblastic", "Microcytic hypochromic", "Hemolytic", "Nutritional"],
+                answer: 1,
+                explanation: ""
+              },
+              {
+                q: "A child was being evaluated for anemia and growth retardation. Stool examination reveals barrel shaped, bile-stained eggs with mucous plugs. The most likely parasite is-",
+                options: ["T.trichiura", "E.vermicularis", "Ascaris lumbricoides", "H. nana"],
+                answer: 0,
+                explanation: ""
+              },
+              {
+                q: "A HIV positive patient is infected by S. stercoralis, on stool examination the most likely morphological form seen is-",
+                options: ["Larvae", "Cyst", "Decorticated Egg", "Fertilized Egg"],
+                answer: 0,
+                explanation: ""
+              },
+              {
+                q: "A 50-year-old female patient, with esophageal varices and portal hypertension presents to Gastroenterology OPD. Stool examination reveals bile-stained oval eggs with lateral knob. Most likely pathogen is-",
+                options: ["S. mansoni", "S. japonicum", "S. hematobium", "F. buski"],
+                answer: 1,
+                explanation: ""
+              },
+              {
+                q: "A 56-year-old male patient visits medicine OPD with complains of intermittent dysentery for 3 to 4 months. Mild hepatosplenomegaly is seen. Stool examination reveals bile-stained oval eggs with lateral spine-",
+                options: ["S. mansoni", "S. japonicum", "S. hematobium", "F. buski"],
+                answer: 0,
+                explanation: ""
+              },
+              {
+                q: "A 23-year-old college student presents to the OPD with foul smelling greasy stool. He also complains of flatulence. Stool examination reveals motile trophozoites with falling leaf motility",
+                options: ["G.lamblia", "B. coli", "E. histolytica", "E. coli"],
+                answer: 0,
+                explanation: ""
+              },
+              {
+                q: "A 25-year-old male with acid-peptic disease underwent endoscopy in the gastro enterology department. Silver staining reveals spiral bacilli and urease breath test is positive. The most likely pathogen is-",
+                options: ["S.minus", "Borrelia", "C.jejuni", "H.pylori"],
+                answer: 3,
+                explanation: ""
+              },
+              {
+                q: "A 60-year-old male patient is diagnosed with Hepato Cellular Carcinoma. Serology is positive for HBSAg Antigen. The following statement is true for the pathogen responsible-",
+                options: [
+                  "It is a DNA virus",
+                  "It is not a blood borne virus.",
+                  "Carrier stae is rare",
+                  "There is no vaccine available."
+                ],
+                answer: 0,
+                explanation: ""
+              },
+              {
+                q: "A liver biopsy of a patient with Hepato Cellular Carcinoma reveals HCV DNA. The following statement is true-",
+                options: [
+                  "It is a DNA virus",
+                  "It is associated with chronic carrier state.",
+                  "It is not transmitted parenterally.",
+                  "It is non-enveloped virus"
+                ],
+                answer: 1,
+                explanation: ""
+              },
+              {
+                q: "A HIV positive female aged 32 years visit the Medicine OPD with complains of diarrhea and weight loss. Fresh stool examination reveals 200um motile larvae. The most likely pathogen is-",
+                options: ["S.stercoralis", "Hookworm", "T.spiralis", "E.vermicularis"],
+                answer: 0,
+                explanation: ""
+              },
+              {
+                q: "A HIV positive male patient of 34 years gives history of migrating pruritic raised erythematous lesions. Patient also has mild diarrhea. Most likely parasitic form seen in the stool sample is-",
+                options: ["Egg", "Trophozite", "Cyst", "Larva"],
+                answer: 3,
+                explanation: ""
+              },
+              {
+                q: "Following a school picnic 20 children complained of nausea, vomiting and jaundice. The most likely virus responsible is-",
+                options: ["HDV", "HAV", "HBV", "HCV"],
+                answer: 1,
+                explanation: ""
+              },
+              {
+                q: "In an apartment complex 8 families of 16 developed nausea, vomiting, and jaundice. On investigation sewage water pipeline mixing with potable water was seen. The most likely virus responsible is-",
+                options: ["HEV", "HCV", "HDV", "HBV"],
+                answer: 0,
+                explanation: ""
+              },
+              {
+                q: "A village reported sudden cases of diarrhea with 50 villagers developing rice water stool. The most likely transport media lab must prepare in bulk is-",
+                options: ["Alkaline peptone water", "Sacchs Buffered glycerol saline", "Amies transport media", "GNB broth"],
+                answer: 0,
+                explanation: ""
+              },
+              {
+                q: "Stool sample from a patient with severe diarrhoea revealed darting motility, TCBS media revealed yellow-colored colonies. Most likely pathogen is-",
+                options: ["E.coli- EPEC", "V. cholerae", "E.coli- ETEC", "C.jejuni"],
+                answer: 1,
+                explanation: ""
+              },
+              {
+                q: "Following consuming meat burger an 8-year-old child developed petechial rashes on the skin, renal failure, and seizures. The most likely pathogen is-",
+                options: ["EIEC", "EHEC", "EPEC", "ETEC"],
+                answer: 1,
+                explanation: ""
+              },
+              {
+                q: "Following consuming meat burger an 8-year-old child developed petechial rashes on the skin, renal failure, and seizures. The pathogen associated was O157H7 EHEC. The associated syndrome is-",
+                options: [
+                  "Hemolytic Uremic Syndrome",
+                  "Fitz-Hugh Curtis Syndrome",
+                  "Gullian Barre Syndrome",
+                  "Water House Fedrich syndrome"
+                ],
+                answer: 0,
+                explanation: ""
+              },
+              {
+                q: "A 32-year-old male patient has rose patches on skin, step ladder fever, leucopenia, hepatosplenomegaly for 4 days. The best sample to isolate Salmonella is-",
+                options: ["Serum", "Stool", "Blood", "Urine"],
+                answer: 2,
+                explanation: ""
+              },
+              {
+                q: "A 32-year-old male patient has rose patches on skin, step ladder fever, leucopenia, hepatosplenomegaly, alternate diarrhea, and constipationsince 14days. Ideal selective media for stool sample is-",
+                options: ["Wilson & Blair Media", "TCBS", "PT media", "LJ Media"],
+                answer: 0,
+                explanation: ""
+              },
+              {
+                q: "Super carriers are differentiated from simple carriers by-",
+                options: [
+                  "Absence of HBSag antigen",
+                  "Presence of HBeAg and ABV DNA",
+                  "Presence of IgG HBcAg",
+                  "Presence of IgM HBcAg"
+                ],
+                answer: 1,
+                explanation: ""
+              },
+              {
+                q: "A lab technician has documented proof of HBV vaccine 6 years back. The best course to protect him against HBV virus is-",
+                options: ["Restart vaccine series", "Complete vaccination series", "Estimate HBs Ab titer", "Give a booster dose"],
+                answer: 1,
+                explanation: ""
+              },
+              {
+                q: "An apparently healthy pregnant lady developed fever jaundice and died. There is no history of high-risk behavior or blood transfusion. Most likely pathogen is-",
+                options: ["HBV", "HCV", "HEV", "HDV"],
+                answer: 2,
+                explanation: ""
+              },
+              {
+                q: "A person with HBV infection is considered infectious as long as the following marker is isolated in serum-",
+                options: ["HBSAg", "HBeAg", "Anti HBcAg", "Anti HbsAg"],
+                answer: 0,
+                explanation: ""
+              },
+              {
+                q: "Military troop of 20 soldiers developed jaundice, nausea, and vomiting. Anti-HAV IgM is positive in the serum. Treatment of choice is-",
+                options: ["Tenofovir", "Interferon alfa", "Symptomatic", "Telbivudine"],
+                answer: 2,
+                explanation: ""
+              },
+              {
+                q: "A 56-year-old veterinary surgeon presents to the OPD with fever and right abdominal pain. US abdomen reveals cystic lesion with 'water lily'like structure. The definitive host for the pathogen is-",
+                options: ["Dog", "Sheep", "Man", "Fish"],
+                answer: 0,
+                explanation: ""
+              }
+            ]
           },
           "skin-soft-tissue": {
             name: "Skin & Soft Tissue",
