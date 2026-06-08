@@ -89,6 +89,7 @@ function render() {
   if (!chapter) return renderChapters(subject, paper);
   if (!QUIZ_DATA[subject].papers[paper].chapters[chapter]) return renderNotFound();
   if (!mode) return renderModeChooser(subject, paper, chapter);
+  if (mode === "qanda") return renderQA(subject, paper, chapter);
   if (mode === "study") return renderStudy(subject, paper, chapter);
   if (mode === "test") return renderQuiz(subject, paper, chapter);
   return renderNotFound();
@@ -208,10 +209,19 @@ function renderModeChooser(subject, paper, chapter) {
 
   const base = `#/${subject}/${paper}/${chapter}`;
   const grid = el("div", { class: "grid" });
+  if (ch.qanda && ch.qanda.length) {
+    grid.append(
+      el("a", { class: "card", href: `${base}/qanda` }, [
+        el("span", { class: "emoji" }, "💬"),
+        el("span", { class: "title" }, "Q&A"),
+        el("span", { class: "sub" }, "Short-answer questions with model answers shown")
+      ])
+    );
+  }
   grid.append(
     el("a", { class: "card", href: `${base}/study` }, [
       el("span", { class: "emoji" }, "📖"),
-      el("span", { class: "title" }, "Study"),
+      el("span", { class: "title" }, "MCQs"),
       el("span", { class: "sub" }, "Read every question with the answer shown")
     ]),
     el("a", { class: "card", href: `${base}/test` }, [
@@ -226,18 +236,29 @@ function renderModeChooser(subject, paper, chapter) {
   );
 }
 
+// A question may carry a `myAnswer` (single index or array) for cases where I
+// dispute the question-bank's marked answer. When present, the QB answer is
+// shown in green and my answer in blue, both labelled.
+const asSet = (v) => (v == null ? [] : Array.isArray(v) ? v : [v]);
+
 function studyQuestionCard(q, label) {
-  const answerSet = Array.isArray(q.answer) ? q.answer : [q.answer];
+  const qbSet = asSet(q.answer);
+  const mySet = asSet(q.myAnswer);
+  const disputed = mySet.length > 0;
   const opts = el("div", { class: "study-options" });
   q.options.forEach((text, oi) => {
-    const correct = answerSet.includes(oi);
-    opts.appendChild(
-      el("div", { class: "study-option" + (correct ? " correct" : "") }, [
-        el("span", { class: "key" }, OPT_KEYS[oi] + "."),
-        el("span", {}, text),
-        correct ? el("span", { class: "mark" }, "✓") : null
-      ])
-    );
+    const isQB = qbSet.includes(oi);
+    const isMine = mySet.includes(oi);
+    let cls = "study-option";
+    if (isQB) cls += " correct";
+    if (isMine) cls += " alt-correct";
+    const node = el("div", { class: cls }, [
+      el("span", { class: "key" }, OPT_KEYS[oi] + "."),
+      el("span", {}, text)
+    ]);
+    if (isQB) node.appendChild(el("span", { class: "mark" }, disputed ? "✓ QB" : "✓"));
+    if (isMine) node.appendChild(el("span", { class: "mark alt" }, "✓ Mine"));
+    opts.appendChild(node);
   });
   const card = el("div", { class: "study-card" }, [
     el("p", { class: "study-q" }, `${label} ${q.q}`),
@@ -254,9 +275,9 @@ function renderStudy(subject, paper, chapter) {
   const p = QUIZ_DATA[subject].papers[paper];
   const crumbs = chapterCrumbs(subject, paper, chapter);
   crumbs[crumbs.length - 1].href = `#/${subject}/${paper}/${chapter}`;
-  setCrumbs(crumbs.concat({ label: "Study" }));
+  setCrumbs(crumbs.concat({ label: "MCQs" }));
 
-  app.append(pageHead(`${p.name} — Study`,
+  app.append(pageHead(`${p.name} — MCQs`,
     "All chapters together. Correct answers are marked in green, in original order — just like the exam."));
 
   const chapters = Object.entries(p.chapters).filter(([, ch]) => ch.questions.length);
@@ -280,6 +301,36 @@ function renderStudy(subject, paper, chapter) {
     ch.questions.forEach((q, i) => list.appendChild(studyQuestionCard(q, `${i + 1}.`)));
     app.append(list);
   });
+
+  app.append(el("div", { class: "btn-row" }, [
+    el("a", { class: "btn btn-ghost", href: `#/${subject}/${paper}/${chapter}` }, "← Back")
+  ]));
+}
+
+// Q&A shows short-answer questions for THIS chapter with the model answer printed below each.
+function renderQA(subject, paper, chapter) {
+  const ch = QUIZ_DATA[subject].papers[paper].chapters[chapter];
+  const crumbs = chapterCrumbs(subject, paper, chapter);
+  crumbs[crumbs.length - 1] = { label: ch.name, href: `#/${subject}/${paper}/${chapter}` };
+  setCrumbs(crumbs.concat({ label: "Q&A" }));
+
+  const items = ch.qanda || [];
+  app.append(pageHead(`${ch.name} — Q&A`,
+    `${items.length} short-answer question${items.length === 1 ? "" : "s"} with model answers.`));
+
+  if (!items.length) {
+    app.append(el("div", { class: "empty" }, "No Q&A added here yet."));
+    return;
+  }
+
+  const list = el("div", { class: "study-list" });
+  items.forEach((item, i) => {
+    list.appendChild(el("div", { class: "study-card" }, [
+      el("p", { class: "study-q" }, `${i + 1}. ${item.q}`),
+      el("div", { class: "qa-answer", html: item.a })
+    ]));
+  });
+  app.append(list);
 
   app.append(el("div", { class: "btn-row" }, [
     el("a", { class: "btn btn-ghost", href: `#/${subject}/${paper}/${chapter}` }, "← Back")
@@ -313,11 +364,19 @@ function buildSession(subject, paper, chapter, onlyIdxs) {
   return items.map((it) => {
     const order = shuffle(it.q.options.map((_, i) => i));
     // `answer` may be a single index or an array of indices (multiple correct).
-    const answerSet = Array.isArray(it.q.answer) ? it.q.answer : [it.q.answer];
-    const correctPositions = order
-      .map((origIdx, pos) => (answerSet.includes(origIdx) ? pos : -1))
+    const qbSet = asSet(it.q.answer);
+    const mySet = asSet(it.q.myAnswer);          // my disputed answer, if any
+    const accept = [...new Set([...qbSet, ...mySet])];
+    const posOf = (set) => order
+      .map((origIdx, pos) => (set.includes(origIdx) ? pos : -1))
       .filter((pos) => pos >= 0);
-    return { idx: it.idx, q: it.q, order, correctPositions };
+    return {
+      idx: it.idx, q: it.q, order,
+      correctPositions: posOf(accept),          // either answer counts as correct
+      qbPositions: posOf(qbSet),
+      myPositions: posOf(mySet),
+      disputed: mySet.length > 0
+    };
   });
 }
 
@@ -405,20 +464,24 @@ function renderQuiz(subject, paper, chapter, onlyIdxs) {
 
     [...optionsWrap.children].forEach((btn, p2) => {
       btn.disabled = true;
-      if (item.correctPositions.includes(p2)) {
+      if (item.qbPositions.includes(p2)) {
         btn.classList.add("correct");
-        btn.appendChild(el("span", { class: "mark" }, "✓"));
+        btn.appendChild(el("span", { class: "mark" }, item.disputed ? "✓ QB" : "✓"));
+      } else if (item.myPositions.includes(p2)) {
+        btn.classList.add("alt-correct");
+        btn.appendChild(el("span", { class: "mark alt" }, "✓ Mine"));
       } else if (p2 === pos) {
         btn.classList.add("wrong");
         btn.appendChild(el("span", { class: "mark" }, "✗"));
       }
     });
 
-    const multi = item.correctPositions.length > 1;
+    const multi = item.correctPositions.length > 1 && !item.disputed;
     fb.className = "feedback show " + (isCorrect ? "ok" : "no");
     fb.innerHTML = "";
     let head = isCorrect ? "✅ Correct!" : "❌ Not quite.";
-    if (multi) head += " (this question has more than one correct answer)";
+    if (item.disputed) head += " (the QB answer and my suggested answer differ — see below)";
+    else if (multi) head += " (this question has more than one correct answer)";
     fb.appendChild(el("div", {}, head));
     if (item.q.explanation) {
       fb.appendChild(el("div", { class: "why", html: `<b>Why:</b> ${item.q.explanation}` }));
