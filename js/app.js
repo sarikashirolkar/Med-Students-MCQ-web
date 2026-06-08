@@ -286,11 +286,20 @@ function renderStudy(subject, paper, chapter) {
     return;
   }
 
-  // Quick jump-to-chapter links.
+  // Quick jump-to-chapter links. These scroll within the page; we must NOT
+  // change location.hash (that would trigger the router and 404), so we
+  // preventDefault and scroll the target section into view manually.
   const nav = el("div", { class: "study-nav" });
   chapters.forEach(([key, ch]) => {
-    nav.appendChild(el("a", { class: "study-chip", href: `#chapter-${key}` },
-      `${ch.emoji || "📘"} ${ch.name}`));
+    nav.appendChild(el("a", {
+      class: "study-chip",
+      href: `#chapter-${key}`,
+      onclick: (e) => {
+        e.preventDefault();
+        const target = document.getElementById(`chapter-${key}`);
+        if (target) target.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }, `${ch.emoji || "📘"} ${ch.name}`));
   });
   app.append(nav);
 
