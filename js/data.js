@@ -5345,8 +5345,741 @@ const QUIZ_DATA = {
   patho: {
     name: "Pathology",
     emoji: "🧪",
-    enabled: false,
-    papers: {}
+    enabled: true,
+    papers: {
+      paper2: {
+        name: "Paper 2",
+        enabled: true,
+        chapters: {
+          "git-salivary": {
+            name: "Gastrointestinal Tract & Salivary Glands",
+            emoji: "🍽️",
+            questions: [
+              {
+                q: "A 48-year-old man with a 10-year history of gastroesophageal reflux presents with progressive dysphagia. Endoscopy reveals replacement of the distal esophageal squamous epithelium by intestinal-type columnar cells containing goblet cells. Which condition best fits these findings?",
+                options: ["Barrett's esophagus", "Esophageal varices", "Achalasia", "Esophagitis"],
+                answer: 0,
+                explanation: "Replacement of distal squamous epithelium by intestinal-type columnar cells with goblet cells = Barrett's esophagus, a metaplastic, premalignant change driven by chronic reflux."
+              },
+              {
+                q: "A 62-year-old woman presents with weight loss and persistent epigastric discomfort. Endoscopic biopsy of the stomach shows malignant gland-forming epithelial cells. What is the most common type of gastric cancer?",
+                options: ["Lymphoma", "Carcinoid tumor", "Adenocarcinoma", "Gastrointestinal stromal tumor (GIST)"],
+                answer: 2,
+                explanation: "Adenocarcinoma accounts for the vast majority (~90%) of gastric malignancies and is gland-forming."
+              },
+              {
+                q: "A 30-year-old patient with a known history of ulcerative colitis is admitted with abdominal distension, fever, and severe pain. Imaging shows a massively dilated colon with risk of perforation. Which complication is most likely?",
+                options: ["Colonic stricture", "Toxic megacolon", "Fistula formation", "Perforation of the bowel"],
+                answer: 1,
+                explanation: "Massive colonic dilatation with systemic toxicity in UC = toxic megacolon, which carries a high risk of perforation."
+              },
+              {
+                q: "A 45-year-old man presents with chronic epigastric pain relieved by meals. Endoscopy reveals a duodenal ulcer. Which pathogen is most commonly associated with peptic ulcer disease?",
+                options: ["Escherichia coli", "Clostridium difficile", "Helicobacter pylori", "Salmonella"],
+                answer: 2,
+                explanation: "H. pylori is the dominant cause of peptic ulcer disease, especially duodenal ulcers."
+              },
+              {
+                q: "Biopsy of the colon in a patient with chronic bloody diarrhoea shows mucosal ulceration with crypt abscesses filled with neutrophils. This histopathology is typical of:",
+                options: ["Crohn's disease", "Ulcerative colitis", "Colorectal cancer", "Diverticulitis"],
+                answer: 1,
+                explanation: "Continuous mucosal ulceration with crypt abscesses (neutrophils in crypts) is characteristic of ulcerative colitis."
+              },
+              {
+                q: "A 55-year-old man with a 20-year history of heavy alcohol intake presents with ascites, jaundice, and spider angiomas. The primary risk factor for his liver disease is:",
+                options: ["Viral hepatitis", "Alcohol abuse", "Non-alcoholic fatty liver disease", "Hemochromatosis"],
+                answer: 1,
+                explanation: "The long history of heavy alcohol use points to alcoholic liver disease/cirrhosis as the cause of the stigmata of chronic liver disease."
+              },
+              {
+                q: "A pathologist is staging a resected colon carcinoma based on depth of tumor invasion and lymph node involvement according to a classic system. Which staging system is being used?",
+                options: ["Ann Arbor staging", "Clark staging", "Dukes staging", "FIGO staging"],
+                answer: 2,
+                explanation: "Dukes staging classifies colorectal carcinoma by depth of bowel-wall invasion and lymph node involvement. (Ann Arbor = lymphoma, Clark = melanoma, FIGO = gynae cancers.)"
+              },
+              {
+                q: "A 50-year-old diabetic patient complains of early satiety, bloating, and nausea. Gastric emptying study shows significant delay with no mechanical obstruction. Which condition explains these findings?",
+                options: ["Achalasia", "Gastroparesis", "Pyloric stenosis", "Peptic ulcer disease"],
+                answer: 1,
+                explanation: "Delayed gastric emptying without mechanical obstruction in a diabetic = gastroparesis (autonomic neuropathy of the stomach)."
+              },
+              {
+                q: "A patient with long-standing gastroesophageal reflux undergoes endoscopy, which reveals areas of metaplastic columnar epithelium in the distal esophagus. This premalignant change is a risk factor for which condition?",
+                options: ["Barrett's esophagus", "Gastroesophageal reflux disease (GERD)", "Esophageal strictures", "Laryngopharyngeal reflux"],
+                answer: 0,
+                explanation: "The columnar (intestinal) metaplasia itself is Barrett's esophagus — the premalignant lesion that predisposes to esophageal adenocarcinoma."
+              },
+              {
+                q: "A 25-year-old woman presents with abdominal pain, chronic diarrhoea, and weight loss. Colonoscopy shows areas of normal mucosa alternating with patches of ulceration throughout the GI tract, including the terminal ileum. These characteristic skip lesions are seen in:",
+                options: ["Ulcerative colitis", "Celiac disease", "Crohn's disease", "Diverticular disease"],
+                answer: 2,
+                explanation: "Skip lesions, terminal ileal involvement, and transmural disease are hallmarks of Crohn's disease."
+              },
+              {
+                q: "A 50-year-old mason has a history of tobacco chewing for 25 years. He has now developed carcinoma. Which of the following locations is most likely for the development of carcinoma?",
+                options: ["Floor of the mouth", "Lower lip", "Tongue", "Buccal mucosa"],
+                answer: 3,
+                explanation: "With smokeless tobacco/areca chewing, the quid sits against the buccal mucosa, making it the most common site of oral SCC in chewers."
+              },
+              {
+                q: "A 24-year-old male with a 4-year history of abdominal pain, periodic diarrhoea, low-grade fever, and easy fatiguability is found to have an enteric fistula; contrast radiography shows cobblestone mucosa with linear alterations that skip areas of normal bowel wall. Which of the following best explains the formation of fistula in this patient?",
+                options: ["Intramural granuloma", "Transmural inflammation", "Lymphoid reaction", "Skip lesions of the intestinal wall"],
+                answer: 1,
+                explanation: "Crohn's disease causes transmural inflammation, which allows sinus tracts and fistulae to penetrate the full bowel wall."
+              },
+              {
+                q: "A 50-year-old male presents with diarrhoea, flushing and wheezing. Examination shows a grade II/VI diastolic murmur at the right sternal border at the fourth intercostal space. Which substance is most likely to be elevated in this patient's urine?",
+                options: ["5-HIAA", "HVA", "Phenylalanine", "Selegiline"],
+                answer: 0,
+                explanation: "Diarrhoea, flushing, wheezing and right-sided valve disease = carcinoid syndrome; urinary 5-HIAA (serotonin metabolite) is elevated."
+              },
+              {
+                q: "Biopsy of a small rounded rectal polyp demonstrates glands with a saw-tooth contour, composed of proliferating goblet and columnar epithelial cells. No atypia is seen. This polyp is best classified as:",
+                options: ["Hyperplastic polyp", "Peutz-Jeghers polyp", "Tubular adenoma", "Tubulovillous adenoma"],
+                answer: 0,
+                explanation: "A saw-tooth (serrated) glandular profile without atypia is the classic histology of a hyperplastic polyp."
+              },
+              {
+                q: "A 50-year-old male presents with obstructive symptoms. Biopsy of the stomach reveals a Gastrointestinal Stromal Tumour (GIST). The most appropriate marker for this tumour is:",
+                options: ["CD 34", "CD117", "CD 30", "CD 10"],
+                answer: 1,
+                explanation: "GISTs arise from interstitial cells of Cajal and characteristically express CD117 (c-KIT)."
+              }
+            ]
+          },
+          "liver-biliary": {
+            name: "Liver & Hepatobiliary System",
+            emoji: "🫀",
+            questions: [
+              {
+                q: "In a liver biopsy from a patient with cirrhosis, collagen deposition is noted in the space of Disse. Which cell type is responsible for this fibrosis?",
+                options: ["Hepatocytes", "Biliary epithelial cells", "Kupffer cells", "Hepatic stellate cells"],
+                answer: 3,
+                explanation: "Hepatic stellate (Ito) cells in the space of Disse transform into myofibroblasts and deposit collagen, driving hepatic fibrosis."
+              },
+              {
+                q: "A 45-year-old obese female presents with recurrent right upper quadrant pain. Ultrasound shows gallstones. Which factor predisposes to cholesterol gallstone formation?",
+                options: ["Biliary infection", "Chronic haemolysis", "Hypermotility of gallbladder", "Supersaturation of bile with cholesterol"],
+                answer: 3,
+                explanation: "Cholesterol stones form when bile is supersaturated with cholesterol (plus gallbladder hypomotility and nucleation). Haemolysis predisposes to pigment stones."
+              },
+              {
+                q: "A liver biopsy of a 25-year-old male presenting with jaundice shows ground-glass hepatocytes with portal fibrosis and mononuclear infiltrate. Which is the most likely diagnosis?",
+                options: ["Acute hepatitis A infection", "Chronic hepatitis B infection", "Cirrhosis", "Fatty liver"],
+                answer: 1,
+                explanation: "Ground-glass hepatocytes (HBsAg-laden smooth ER) are characteristic of chronic hepatitis B infection."
+              },
+              {
+                q: "A 50-year-old male with chronic liver disease develops portal hypertension. The increased resistance to blood flow is due to:",
+                options: ["Decreased portal blood oxygenation", "Decreased release of angiotensinogen", "Increased nitric oxide production", "Intrahepatic shunts"],
+                answer: 3,
+                explanation: "In cirrhosis, sinusoidal remodelling and intrahepatic vascular shunts (plus increased sinusoidal resistance) raise portal pressure."
+              },
+              {
+                q: "A 50-year-old chronic alcoholic exposed to aflatoxin presents with a liver mass. Which malignancy is most likely?",
+                options: ["Cholangiocarcinoma", "Hepatoblastoma", "Hepatocellular adenoma", "Hepatocellular carcinoma"],
+                answer: 3,
+                explanation: "Chronic alcohol plus aflatoxin (TP53 mutation) are major risk factors for hepatocellular carcinoma."
+              },
+              {
+                q: "In a patient recovering from hepatitis B infection, persistence of which marker after jaundice suggests progression to chronic hepatitis?",
+                options: ["Anti-HBc antibody", "Anti-HBe antibody", "HBsAg", "HBeAg"],
+                answer: 2,
+                explanation: "Persistence of HBsAg beyond ~6 months indicates failure to clear the virus and progression to chronic hepatitis B."
+              },
+              {
+                q: "A 60-year-old alcoholic man presents with confusion and lethargy. Examination shows jaundice and ascites. Labs reveal increased PT and APTT with significantly increased serum ammonia. Which physical finding would you expect that is relevant to the ammonia level?",
+                options: ["Asterixis", "Capillary telangiectasias", "Caput medusae", "Palmar erythema"],
+                answer: 0,
+                explanation: "Hyperammonaemia causes hepatic encephalopathy, whose classic sign is asterixis (flapping tremor)."
+              },
+              {
+                q: "A 28-year-old woman presents with fever, malaise and yellow eyes. She denies alcohol abuse. Labs show increased AST, ALT and increased IgM anti-hepatitis A titres. Which is the most likely outcome of this infection?",
+                options: ["Cirrhosis", "Complete resolution", "Chronic carrier state", "Fulminant hepatitis"],
+                answer: 1,
+                explanation: "Hepatitis A is self-limiting; it does not cause a chronic carrier state, and almost always resolves completely."
+              },
+              {
+                q: "A 30-year-old woman seeking pregnancy has prenatal testing: HBsAg (-), anti-HBs (+), anti-HBc (-), anti-HBe (-), HBV DNA (-). Which status does this represent?",
+                options: ["Hepatitis B carrier", "Immunized against hepatitis B", "Infected and within the window period", "Infected with hepatitis B and highly transmissible"],
+                answer: 1,
+                explanation: "Isolated anti-HBs positivity with negative anti-HBc indicates vaccine-induced immunity (no natural infection)."
+              },
+              {
+                q: "A 40-year-old multigravida presents with nausea, vomiting, fever and right upper quadrant pain. Examination shows arrested inspiration on palpation of the RUQ (Murphy sign). Labs reveal neutrophilia with left shift. Which is the most likely diagnosis?",
+                options: ["Acute cholecystitis", "Carcinoma of ampulla of Vater", "Cholangiocarcinoma", "Cholesterolosis"],
+                answer: 0,
+                explanation: "A positive Murphy sign with fever and neutrophilia is classic for acute cholecystitis."
+              }
+            ]
+          },
+          "respiratory": {
+            name: "Respiratory System",
+            emoji: "🫁",
+            questions: [
+              {
+                q: "A 28-year-old school teacher develops sudden onset of cough, mild fever, and runny nose after a cold. Chest exam is clear and sputum culture is negative. Most likely cause?",
+                options: ["Bacterial infection", "Viral infection", "Fungal infection", "Allergens"],
+                answer: 1,
+                explanation: "Mild upper respiratory symptoms after a cold with a negative bacterial culture point to a viral infection."
+              },
+              {
+                q: "A 64-year-old man with a 40-pack-year history presents with hemoptysis and a central hilar mass on CT. Which lung cancer is most strongly linked to cigarette smoking?",
+                options: ["Adenocarcinoma", "Small cell lung carcinoma", "Large cell carcinoma", "Squamous cell carcinoma"],
+                answer: 1,
+                explanation: "Small cell carcinoma is central and has the strongest association with smoking. (Squamous cell carcinoma is also central and smoking-related — a common distractor here.)"
+              },
+              {
+                q: "A 16-year-old girl reports recurrent night-time wheeze and breathlessness. Sputum smear shows Charcot-Leyden crystals. Which inflammatory cell predominates?",
+                options: ["Neutrophilic infiltration", "Eosinophilic infiltration", "Lymphocytic infiltration", "Fibroblast proliferation"],
+                answer: 1,
+                explanation: "Charcot-Leyden crystals derive from eosinophil membrane protein (galectin-10); asthma is eosinophil-driven."
+              },
+              {
+                q: "A 70-year-old smoker has chronic cough, exertional dyspnea, and an FEV1/FVC ratio of 55% with no significant bronchodilator response. Characteristic feature?",
+                options: ["Reversible airway obstruction", "Irreversible airway obstruction", "Only emphysema", "Restrictive lung disease"],
+                answer: 1,
+                explanation: "A low FEV1/FVC that does not reverse with bronchodilator defines COPD — fixed, irreversible airway obstruction."
+              },
+              {
+                q: "A 62-year-old man on long-term amiodarone therapy complains of progressive breathlessness. HRCT shows a reticular pattern and honeycombing. Key pathologic change?",
+                options: ["Cough and wheezing", "Alveolar destruction", "Scarring of lung tissue", "Airway hyperreactivity"],
+                answer: 2,
+                explanation: "Honeycombing on HRCT indicates pulmonary fibrosis — scarring of lung tissue (here, amiodarone-induced)."
+              },
+              {
+                q: "A 35-year-old African-American woman has bilateral hilar lymphadenopathy and skin nodules. Lung biopsy reveals granulomas without central necrosis. Typical histology?",
+                options: ["Caseating granulomas", "Non-caseating granulomas", "Cavitary lesions", "Interstitial fibrosis"],
+                answer: 1,
+                explanation: "Sarcoidosis classically shows non-caseating (non-necrotizing) granulomas with bilateral hilar lymphadenopathy."
+              },
+              {
+                q: "A 22-year-old student presents with episodic wheezing and cough after dust exposure. Sputum smear shows coiled mucous plugs. These are known as:",
+                options: ["Chronic bronchitis", "Asthma", "Tuberculosis", "Pneumonia"],
+                answer: 1,
+                explanation: "Coiled mucous plugs (Curschmann spirals) in sputum, with episodic wheeze, indicate asthma."
+              },
+              {
+                q: "A 58-year-old obese smoker has chronic productive cough, peripheral edema, and cyanosis. Which chronic lung disease fits this blue bloater phenotype?",
+                options: ["Asthma", "Emphysema", "Chronic bronchitis", "Pulmonary fibrosis"],
+                answer: 2,
+                explanation: "Blue bloater = chronic bronchitis: productive cough, hypoxaemia/cyanosis, and cor pulmonale with edema."
+              },
+              {
+                q: "A 67-year-old retired shipyard worker presents with progressive dyspnea. Histology of lung tissue shows beaded, iron-coated fibers. These are characteristic of:",
+                options: ["Silicosis", "Asbestosis", "Coal worker's pneumoconiosis", "Berylliosis"],
+                answer: 1,
+                explanation: "Beaded, iron-coated (ferruginous) fibers = asbestos bodies; shipyard work is a classic asbestos exposure."
+              },
+              {
+                q: "A 45-year-old patient has repeated episodes of pneumonia since childhood and CT shows bronchiectasis. Sweat chloride is markedly elevated. Underlying disease?",
+                options: ["Cystic fibrosis", "Asthma", "COPD", "Bronchiolitis obliterans"],
+                answer: 0,
+                explanation: "Recurrent infections, bronchiectasis, and raised sweat chloride are diagnostic of cystic fibrosis (CFTR defect)."
+              }
+            ]
+          },
+          "cardiovascular": {
+            name: "Cardiovascular System",
+            emoji: "❤️",
+            questions: [
+              {
+                q: "A 45-year-old woman with a history of infective endocarditis of the mitral valve suddenly develops weakness of the right arm. Embolic phenomena are suspected. Vegetations from the mitral valve are least likely to embolize to which organ?",
+                options: ["Brain", "Liver", "Spleen", "Lung"],
+                answer: 3,
+                explanation: "Mitral (left-sided) vegetations embolize into the systemic circulation (brain, spleen, kidney). The lung is supplied by right-sided emboli, so it is least likely."
+              },
+              {
+                q: "A 12-year-old boy presents with fever, migratory polyarthritis, and a new heart murmur. He is diagnosed with acute rheumatic fever. Which cardiac valve is least commonly involved?",
+                options: ["Mitral", "Aortic", "Pulmonary", "Tricuspid"],
+                answer: 2,
+                explanation: "Rheumatic involvement follows mitral > aortic > tricuspid; the pulmonary valve is least commonly affected."
+              },
+              {
+                q: "A 58-year-old smoker presents with crushing chest pain. ECG shows ST-elevation in the anterior leads. Which coronary artery is most commonly the culprit in myocardial infarction?",
+                options: ["Right coronary", "Left coronary trunk", "Left anterior descending (LAD)", "Left circumflex"],
+                answer: 2,
+                explanation: "The LAD is the most commonly involved coronary artery in MI and supplies the anterior wall/anterior septum."
+              },
+              {
+                q: "Two weeks after an acute myocardial infarction, a 60-year-old develops fever, chest pain, and a pericardial friction rub. There is no evidence of infection. This presentation is typical of which condition?",
+                options: ["Viral pericarditis", "Bacterial pericarditis", "Fungal pericarditis", "Dressler's syndrome"],
+                answer: 3,
+                explanation: "Dressler's syndrome is an autoimmune (post-MI) pericarditis occurring weeks after infarction."
+              },
+              {
+                q: "A histologic section of the heart taken 72 hours after an MI is examined. Which cell type predominates in the infarcted area at this stage?",
+                options: ["Neutrophils", "Lymphocytes", "Macrophages", "Monocytes"],
+                answer: 0,
+                explanation: "At 1-3 days post-MI, neutrophils predominate. Macrophages take over from about day 3-7 as they clear necrotic debris."
+              },
+              {
+                q: "While evaluating a patient with suspected rheumatic fever, you review the Jones major criteria. All of the following are major criteria except:",
+                options: ["Pancarditis", "Arthritis", "Subcutaneous nodules", "Erythema nodosum"],
+                answer: 3,
+                explanation: "Jones major criteria include carditis, polyarthritis, subcutaneous nodules, chorea, and erythema MARGINATUM — not erythema nodosum."
+              },
+              {
+                q: "A 14-year-old girl presents with fever and migratory joint pain. Endomyocardial biopsy shows foci of fibrinoid necrosis with Anitschkow cells. These are known as Aschoff bodies and are diagnostic of:",
+                options: ["Acute rheumatic fever", "Systemic lupus erythematosus", "Subacute bacterial endocarditis", "Tuberculosis"],
+                answer: 0,
+                explanation: "Aschoff bodies (fibrinoid necrosis with Anitschkow cells) are pathognomonic of acute rheumatic fever."
+              },
+              {
+                q: "A 45-year-old man with long-standing hyperlipidemia undergoes an autopsy study. On the aortic intima, small yellow flat lesions composed of lipid-laden macrophages are seen — the earliest lesion of atherosclerosis. Where are such fatty streaks typically found?",
+                options: ["Fatty liver", "Pancreatitis", "Aorta", "Breast"],
+                answer: 2,
+                explanation: "Fatty streaks (lipid-laden foam cell macrophages) are the earliest atherosclerotic lesion and are typically found in the aorta."
+              },
+              {
+                q: "A 14-year-old girl presents with fever and migratory joint pain. Endomyocardial biopsy shows foci of fibrinoid necrosis with Anitschkow cells. These cells are derived from:",
+                options: ["Plasma cells", "Macrophages", "Lymphocytes", "Neutrophils"],
+                answer: 1,
+                explanation: "Anitschkow cells (caterpillar cells) are activated macrophages found within Aschoff bodies."
+              },
+              {
+                q: "A 10-year-old girl presents with fever and painful swelling of large joints 3 weeks after a sore throat. On auscultation, a diastolic murmur is heard over the apex. Which criteria are used in the diagnosis of this condition?",
+                options: ["Duke criteria", "Jones criteria", "ACR criteria", "New York criteria"],
+                answer: 1,
+                explanation: "Acute rheumatic fever is diagnosed using the (modified) Jones criteria. Duke criteria are for infective endocarditis."
+              },
+              {
+                q: "A 9-year-old boy presents with fever and migratory joint pain. Endomyocardial biopsy shows foci of fibrinoid necrosis with Anitschkow cells. Which of the following statements is TRUE?",
+                options: ["Vegetations are large and friable", "Fibrinous pericarditis is seen", "Fish-mouth or button-hole stenosis of the mitral valve is seen in the acute phase", "MacCallum's patch is seen in the anterior wall of the right atrium"],
+                answer: 1,
+                explanation: "Acute rheumatic carditis causes fibrinous (bread-and-butter) pericarditis. Vegetations are small and firm (not friable), fish-mouth stenosis is a CHRONIC change, and MacCallum's patch is in the LEFT atrium."
+              }
+            ]
+          },
+          "urinary": {
+            name: "Urinary Tract",
+            emoji: "🫘",
+            questions: [
+              {
+                q: "A 40-year-old man presents with flank pain and a family history of kidney cysts. Imaging shows multiple bilateral renal cysts. Which statement is NOT true about this condition?",
+                options: ["Autosomal dominant inheritance", "Hypertension is rare", "Can be associated with cysts in liver, lungs and pancreas", "Pyelonephritis is common"],
+                answer: 1,
+                explanation: "In adult (autosomal dominant) polycystic kidney disease, hypertension is COMMON, not rare — so that statement is false."
+              },
+              {
+                q: "A 35-year-old woman develops hematuria and progressive renal insufficiency. Biopsy confirms a primary glomerulonephritis. Which is the most common cause of glomerulonephritis in adults?",
+                options: ["Minimum change disease", "Membranous glomerulonephritis", "Membranoproliferative glomerulonephritis", "IgA nephropathy"],
+                answer: 3,
+                explanation: "IgA nephropathy (Berger disease) is the most common primary glomerulonephritis worldwide in adults."
+              },
+              {
+                q: "A 6-year-old child presents with generalized edema and heavy proteinuria. Renal function is otherwise normal. The most common cause of nephrotic syndrome in children is:",
+                options: ["Acute post-streptococcal glomerulonephritis", "Minimal change disease", "Membranoproliferative glomerulonephritis", "Rapidly progressive glomerulonephritis"],
+                answer: 1,
+                explanation: "Minimal change disease is the most common cause of nephrotic syndrome in children and responds well to steroids."
+              },
+              {
+                q: "A 67-year-old man presents with painless hematuria. Imaging shows a mass in the renal pelvis. Which malignancy most commonly arises from the renal pelvis?",
+                options: ["RCC", "Transitional cell carcinoma", "Melanoma", "Adenocarcinoma"],
+                answer: 1,
+                explanation: "The renal pelvis is lined by urothelium, so transitional cell (urothelial) carcinoma is the most common malignancy there."
+              },
+              {
+                q: "A patient with chronic kidney disease develops confusion, asterixis, and altered mental status. Which manifestation of renal failure is usually due to uraemia?",
+                options: ["Encephalopathy", "Hyperphosphataemia", "Hypertension", "Oedema"],
+                answer: 0,
+                explanation: "Uraemic encephalopathy produces confusion and asterixis; it reflects accumulation of nitrogenous wastes."
+              },
+              {
+                q: "A child develops gross hematuria two weeks after a streptococcal throat infection. What is most important in the pathogenesis of this post-infectious glomerulonephritis?",
+                options: ["Activation of alternative complement pathway", "Anti-basement membrane antibodies", "Direct podocyte injury", "Immune complex formation"],
+                answer: 3,
+                explanation: "Post-streptococcal GN is mediated by immune complex deposition (subepithelial humps) in the glomeruli."
+              },
+              {
+                q: "A previously healthy 4-year-old presents with generalized edema and massive proteinuria. The most likely underlying disease is:",
+                options: ["Dense deposit disease", "Focal & segmental glomerulosclerosis", "Membranous nephropathy", "Minimal change disease"],
+                answer: 3,
+                explanation: "Minimal change disease is the commonest cause of nephrotic syndrome in young children."
+              },
+              {
+                q: "A 60-year-old man with long-standing uncontrolled hypertension now shows rapidly progressive renal failure. Which pathological lesion is most consistent?",
+                options: ["Corticomedullary scarring", "Fibromuscular dysplasia", "Hyperplastic arteriolitis", "Papillary necrosis"],
+                answer: 2,
+                explanation: "Malignant hypertension causes hyperplastic arteriolosclerosis (onion-skin arterioles) with fibrinoid necrosis and rapid renal decline."
+              },
+              {
+                q: "A patient is resuscitated after a cardiac arrest. Serum creatinine rises and oliguria develops. Which part of the nephron is most vulnerable to ischemic damage?",
+                options: ["Ascending limb of the loop of Henle", "Distal convoluted tubule", "Glomerulus", "Proximal convoluted tubule"],
+                answer: 3,
+                explanation: "The proximal convoluted tubule (straight segment) and thick ascending limb are most vulnerable to ischemia; the PCT is the classic answer in acute tubular necrosis."
+              },
+              {
+                q: "An elderly man develops acute pyelonephritis. What is the most common underlying cause?",
+                options: ["Haematogenous spread of infection", "Malformation of the vesicoureteric junction", "Stasis of urine in the bladder", "Ureteric obstruction"],
+                answer: 2,
+                explanation: "Ascending infection from urinary stasis (e.g., bladder outlet obstruction in elderly men) is the most common cause of acute pyelonephritis."
+              },
+              {
+                q: "A woman on long-term rifampicin therapy presents with fever, rash, and rising creatinine. She most likely has:",
+                options: ["Haemolytic-uraemic syndrome", "IgA nephropathy", "Interstitial nephritis", "Light chain cast nephropathy"],
+                answer: 2,
+                explanation: "The triad of fever, rash, and rising creatinine after a drug (rifampicin) indicates acute (allergic) interstitial nephritis."
+              },
+              {
+                q: "A 70-year-old man is found to have renal artery stenosis while being evaluated for secondary hypertension. Most common cause?",
+                options: ["Atherosclerosis", "Dissection", "Fibromuscular dysplasia", "Vasculitis"],
+                answer: 0,
+                explanation: "In older patients, atherosclerosis is the most common cause of renal artery stenosis (fibromuscular dysplasia affects younger women)."
+              },
+              {
+                q: "A 45-year-old man passes recurrent calcium oxalate kidney stones. The most common cause of renal calculi is:",
+                options: ["Idiopathic hypercalciuria", "Hypercalcaemia", "Hyperuricosuria", "Infection"],
+                answer: 0,
+                explanation: "Calcium oxalate stones are the most common stones, and idiopathic hypercalciuria is their most frequent underlying cause."
+              },
+              {
+                q: "A diabetic patient with acute pyelonephritis develops sudden flank pain and gross hematuria. A feared complication in such patients is:",
+                options: ["Chronic pyelonephritis", "Haemorrhagic cystitis", "Papillary necrosis", "Tubular injury"],
+                answer: 2,
+                explanation: "Diabetics with pyelonephritis are prone to renal papillary necrosis, presenting with flank pain and hematuria from sloughed papillae."
+              }
+            ]
+          },
+          "male-genital": {
+            name: "Male Genital Tract",
+            emoji: "♂️",
+            questions: [
+              {
+                q: "A 28-year-old man undergoing fertility evaluation has a testicular biopsy showing primary spermatocytes in Prophase I of meiosis. How long does Prophase I of the spermatocyte phase last?",
+                options: ["2 hours", "24 hours", "2 days", "22 days"],
+                answer: 3,
+                explanation: "Prophase I of the primary spermatocyte is prolonged, lasting about 22 days."
+              },
+              {
+                q: "Microscopic examination of spermatids shows PAS-positive granules, indicating formation of pro-acrosomal material. Which spermatid phase is this?",
+                options: ["Golgi phase", "Cap phase", "Acrosome phase", "Maturation phase"],
+                answer: 0,
+                explanation: "Pro-acrosomal (PAS-positive) granules first appear in the Golgi phase of spermiogenesis."
+              },
+              {
+                q: "A patient is given a drug that targets early spermatogenesis to improve fertility. The clinician wants to know when effects will be visible in sperm count. How long will it take for the effects to appear?",
+                options: ["6 days", "16 days", "22 days", "86 days"],
+                answer: 3,
+                explanation: "Spermatogenesis plus epididymal transit takes roughly 64-74 days; effects on an ejaculated sperm count appear at about 86 days (~3 months)."
+              },
+              {
+                q: "A 35-year-old male presents with erectile dysfunction. Neurological examination is normal, but Doppler studies show impaired penile blood flow. Which structures are mainly responsible for maintaining an erection?",
+                options: ["Pacinian corpuscles", "Peripheral nerves", "Helicine arteries"],
+                answer: 2,
+                explanation: "Dilatation of the helicine arteries fills the corpora cavernosa and produces/maintains erection; impaired flow causes vasculogenic ED."
+              },
+              {
+                q: "Testicular histology shows cells progressing through the first meiotic division. Which cells are undergoing this division?",
+                options: ["Sertoli cells", "Spermatogonia", "Primary spermatocyte", "Secondary spermatocyte"],
+                answer: 2,
+                explanation: "The primary spermatocyte undergoes the first meiotic division to form secondary spermatocytes."
+              }
+            ]
+          },
+          "female-genital": {
+            name: "Female Genital Tract",
+            emoji: "♀️",
+            questions: [
+              {
+                q: "A 32-year-old woman presents with pelvic pain, dysmenorrhea, and infertility. On laparoscopy, multiple lesions are seen on the ovary and fallopian tubes. Which of the following sites is least commonly affected by endometriosis?",
+                options: ["Uterus", "Ovary", "Fallopian tube", "Liver"],
+                answer: 3,
+                explanation: "Endometriosis favours the ovary, pelvic peritoneum, and tubes. Distant sites like the liver are rarely involved."
+              },
+              {
+                q: "A 40-year-old woman presents with an adnexal mass. Histopathology shows mature thyroid tissue within the ovary. This condition is known as:",
+                options: ["Ovarian malformation", "Endometriosis of ovary", "Krukenberg tumor", "Germ cell tumor of the ovary"],
+                answer: 3,
+                explanation: "Thyroid tissue in the ovary is struma ovarii, a monodermal mature teratoma — a germ cell tumor of the ovary."
+              },
+              {
+                q: "A 25-year-old female presents with a rapidly growing ovarian mass. On histopathology, the following tumors are considered germ cell in origin, except:",
+                options: ["Dysgerminoma", "Embryonal carcinoma", "Mature teratoma", "Krukenberg tumor"],
+                answer: 3,
+                explanation: "Krukenberg tumor is a metastatic signet-ring (usually gastric) adenocarcinoma to the ovary — not a germ cell tumor."
+              },
+              {
+                q: "A 22-year-old woman presents with an ovarian mass. Histology shows a mature cystic teratoma containing skin, hair, and sebaceous material. Which of the following is not malignant?",
+                options: ["Mature teratoma", "Choriocarcinoma", "Dysgerminoma", "Embryonal carcinoma"],
+                answer: 0,
+                explanation: "Mature cystic teratoma (dermoid cyst) is benign; the others are malignant germ cell tumors."
+              },
+              {
+                q: "A 28-year-old woman presents with fever, lower abdominal pain, and purulent vaginal discharge. Cervical cultures are sent. Which organism is most commonly associated with pelvic inflammatory disease?",
+                options: ["Escherichia coli", "Neisseria gonorrhoeae", "Streptococcus pyogenes", "Staphylococcus aureus"],
+                answer: 1,
+                explanation: "Neisseria gonorrhoeae (with Chlamydia) is the classic cause of PID."
+              },
+              {
+                q: "A 34-year-old woman with long-standing infertility and severe dysmenorrhea undergoes ultrasound, which shows a cystic ovarian lesion filled with thick, brown fluid. This is classically seen in:",
+                options: ["Ovarian carcinoma", "Endometriosis", "Polycystic ovarian syndrome", "Hydatidiform mole"],
+                answer: 1,
+                explanation: "A chocolate cyst (endometrioma) filled with old brown blood is characteristic of ovarian endometriosis."
+              },
+              {
+                q: "A 50-year-old multiparous woman presents with irregular vaginal bleeding and foul-smelling discharge. On examination, there is a friable cervical growth. Biopsy confirms carcinoma cervix. The most common histological type is:",
+                options: ["Adenocarcinoma", "Squamous cell carcinoma", "Small cell carcinoma", "Neuroendocrine carcinoma"],
+                answer: 1,
+                explanation: "Squamous cell carcinoma is the most common histological type of cervical carcinoma."
+              },
+              {
+                q: "A 65-year-old obese, diabetic, hypertensive woman presents with postmenopausal bleeding. Which of the following is a known risk factor for endometrial carcinoma?",
+                options: ["Long-term use of oral contraceptives", "History of multiple pregnancies", "Prolonged estrogen exposure without progesterone", "Early menopause"],
+                answer: 2,
+                explanation: "Unopposed estrogen (no progesterone) is the central risk factor for endometrioid endometrial carcinoma. OCPs, multiparity, and early menopause are protective."
+              },
+              {
+                q: "A 55-year-old woman presents with abdominal distension, vague pain, and ascites. Serum CA-125 is elevated. Which statement regarding ovarian cancer is true?",
+                options: ["It is most commonly diagnosed in the early stages", "Most cases present with an elevated serum CA-125 level", "The risk is lower in women who have never been pregnant", "It is rarely associated with family history of breast cancer"],
+                answer: 1,
+                explanation: "Ovarian cancer usually presents late, and most cases show an elevated serum CA-125. Nulliparity increases risk, and it is linked to BRCA/breast cancer family history."
+              },
+              {
+                q: "A 40-year-old woman undergoes a Pap smear which shows cervical intraepithelial neoplasia (CIN). Which grade of CIN is the most common precursor for invasive carcinoma of the cervix?",
+                options: ["CIN I", "CIN II", "CIN III", "Endometrial hyperplasia"],
+                answer: 2,
+                explanation: "CIN III (high-grade dysplasia/carcinoma in situ) is the most likely to progress to invasive cervical carcinoma."
+              },
+              {
+                q: "A 45-year-old woman presents with postmenopausal bleeding. Ultrasound shows a solid ovarian mass. Histology reveals a sex cord stromal tumor producing estrogen. The most likely diagnosis is:",
+                options: ["Serous cystadenoma", "Granulosa cell tumor", "Mucinous cystadenoma", "Fibroma"],
+                answer: 1,
+                explanation: "Granulosa cell tumor is an estrogen-producing sex cord-stromal tumor that can cause postmenopausal bleeding (and endometrial hyperplasia)."
+              },
+              {
+                q: "A 35-year-old woman presents with vaginal spotting and mucoid discharge. On speculum exam, a small red polypoid growth is seen protruding from the cervical canal. The most common benign cervical tumor is:",
+                options: ["Endocervical polyp", "Squamous cell carcinoma", "Leiomyoma", "Cervical intraepithelial neoplasia"],
+                answer: 0,
+                explanation: "An endocervical polyp is the most common benign tumor of the cervix, presenting as a red polypoid growth from the canal."
+              }
+            ]
+          },
+          "breast": {
+            name: "Breast",
+            emoji: "🎗️",
+            questions: [
+              {
+                q: "A 45-year-old woman presents with a strong family history of breast cancer. Genetic testing reveals a mutation associated with increased breast and ovarian cancer risk. Which chromosome is the BRCA1 gene located on?",
+                options: ["Chromosome 13", "Chromosome 11", "Chromosome 17", "Chromosome 22"],
+                answer: 2,
+                explanation: "BRCA1 is on chromosome 17 (BRCA2 is on chromosome 13)."
+              },
+              {
+                q: "A 38-year-old woman complains of a breast lump, with early menarche at age 10 and late menopause in her mother. She drinks coffee daily. Which of the following is not a risk factor for breast carcinoma?",
+                options: ["Caffeine intake", "Early menstruation", "Family history", "Late menopause"],
+                answer: 0,
+                explanation: "Caffeine intake is not an established risk factor. Early menarche, late menopause, and family history all increase risk via prolonged estrogen exposure/genetics."
+              },
+              {
+                q: "A 50-year-old female presents with a firm irregular breast mass. Biopsy reveals malignant cells forming duct-like structures infiltrating stroma. What is the most common type of breast carcinoma?",
+                options: ["Intraductal (Invasive ductal) carcinoma", "Colloid carcinoma", "Lobular carcinoma", "None"],
+                answer: 0,
+                explanation: "Invasive ductal carcinoma (NST) is the most common type of breast cancer."
+              },
+              {
+                q: "A 25-year-old woman presents with a well-circumscribed, mobile, rubbery lump in her breast. Histopathology shows proliferation of both stromal and glandular components. This lesion is best described as:",
+                options: ["Benign", "Malignant", "Premalignant", "None of the above"],
+                answer: 0,
+                explanation: "A mobile, rubbery, well-circumscribed lump with stromal and glandular proliferation is a fibroadenoma — a benign lesion."
+              },
+              {
+                q: "A 52-year-old postmenopausal woman presents with a mucin-secreting breast tumor showing slow growth and pushing margins. Which type of carcinoma has the best prognosis?",
+                options: ["Mucinous carcinoma", "Medullary carcinoma", "Invasive ductal carcinoma", "Lobular carcinoma"],
+                answer: 0,
+                explanation: "Mucinous (colloid) carcinoma is slow-growing with pushing margins and has the best prognosis among these."
+              },
+              {
+                q: "A biopsy specimen from a breast carcinoma is tested for estrogen receptor (ER), progesterone receptor (PR), and HER2/neu expression to guide therapy. This molecular classification is based on:",
+                options: ["ER, PR and HER2/neu", "Gene profiling", "Histology", "Mutations"],
+                answer: 0,
+                explanation: "Routine molecular classification of breast cancer is based on ER, PR, and HER2/neu status, which guides therapy."
+              },
+              {
+                q: "A 55-year-old woman develops a bluish-purple swelling on her arm several years after a mastectomy with axillary lymph node dissection. What is the most common site for lymphangiosarcoma?",
+                options: ["Post mastectomy arm", "Liver", "Spleen", "Retroperitoneum"],
+                answer: 0,
+                explanation: "Chronic lymphedema after mastectomy (Stewart-Treves syndrome) predisposes to lymphangiosarcoma of the ipsilateral arm."
+              },
+              {
+                q: "A 60-year-old woman presents with eczema-like changes over the nipple and areola. Microscopy shows large malignant cells with pale-staining cytoplasm within the epidermis. The characteristic feature of Paget's disease is:",
+                options: ["Abundant clear cytoplasm", "Eosinophilic cytoplasm", "Glycogen mass", "Multinucleated giant cell"],
+                answer: 0,
+                explanation: "Paget cells are large malignant cells with abundant pale/clear cytoplasm scattered within the nipple epidermis."
+              },
+              {
+                q: "A breast biopsy from a woman with fibrocystic change shows focal proliferation of atypical epithelial cells. Which lesion carries an increased risk of carcinoma?",
+                options: ["Atypical epithelial hyperplasia", "Sclerosing adenosis", "Cystic change", "Apocrine metaplasia"],
+                answer: 0,
+                explanation: "Atypical (ductal/lobular) hyperplasia carries a significantly increased risk of subsequent carcinoma; the others are non-proliferative or carry minimal risk."
+              },
+              {
+                q: "A 48-year-old woman presents with a breast tumor. Microscopy shows small, uniform tumor cells arranged in a single-file pattern infiltrating fibrous stroma. This histologic appearance is characteristic of:",
+                options: ["Infiltrating lobular carcinoma", "Pleomorphic cells in sheets", "Cribriform pattern", "Pinwheel pattern"],
+                answer: 0,
+                explanation: "Single-file (Indian-file) infiltration by small uniform cells, due to loss of E-cadherin, is characteristic of invasive lobular carcinoma."
+              }
+            ]
+          },
+          "endocrine": {
+            name: "Endocrine System",
+            emoji: "🦋",
+            questions: [
+              {
+                q: "A 45-year-old woman presents with a thyroid nodule. FNAC shows polygonal cells in nests with amyloid stroma and markedly elevated peptide hormone levels. The tumor is associated with increased levels of:",
+                options: ["Thyroglobulin", "T3", "T4", "Calcitonin"],
+                answer: 3,
+                explanation: "Nests of cells with amyloid stroma = medullary carcinoma of thyroid (parafollicular C cells), which secretes calcitonin."
+              },
+              {
+                q: "A 55-year-old man has a large thyroid swelling that extends behind the sternum into the mediastinum and moves with deglutition. This condition is called:",
+                options: ["Solitary nodule", "Colloid goiter", "Retrosternal goiter", "Medullary carcinoma"],
+                answer: 2,
+                explanation: "A goiter extending behind the sternum into the mediastinum is a retrosternal goiter."
+              },
+              {
+                q: "A 40-year-old male presents with recurrent peptic ulcers, hypercalcemia, and features of Cushing's syndrome, with a positive family history of endocrine tumors. MEN type 1 includes tumors of all except:",
+                options: ["Parathyroid", "Pituitary", "Pancreas", "Medullary carcinoma of thyroid"],
+                answer: 3,
+                explanation: "MEN 1 = parathyroid, pituitary, and pancreas (the 3 Ps). Medullary thyroid carcinoma belongs to MEN 2."
+              },
+              {
+                q: "A 25-year-old woman with chronic renal disease develops osteomalacia. Labs show low calcium and phosphate with decreased activation of vitamin D. The active form of Vitamin D is:",
+                options: ["1,25 (OH)2 Vitamin D3", "25 OH Vitamin D3", "Vitamin D3", "Vitamin D2"],
+                answer: 0,
+                explanation: "The active form is 1,25-dihydroxyvitamin D3 (calcitriol); its final hydroxylation occurs in the kidney, which fails in renal disease."
+              },
+              {
+                q: "A 42-year-old female presents with a thyroid nodule. FNAC reveals follicular cells but cannot distinguish between adenoma and carcinoma. FNAC is least diagnostic in:",
+                options: ["Anaplastic", "Papillary", "Follicular", "Thyroiditis"],
+                answer: 2,
+                explanation: "FNAC cannot distinguish follicular adenoma from follicular carcinoma (which needs capsular/vascular invasion), so it is least diagnostic for follicular lesions."
+              },
+              {
+                q: "A 30-year-old woman presents with a thyroid swelling. Cytology shows papillary structures with cells having clear, empty-appearing nuclei and nuclear grooves. Orphan Annie nuclei are characteristic of:",
+                options: ["Papillary carcinoma of thyroid", "Paraganglioma", "Meningioma", "Pituitary carcinoma"],
+                answer: 0,
+                explanation: "Orphan Annie eye nuclei and nuclear grooves are diagnostic features of papillary thyroid carcinoma."
+              },
+              {
+                q: "A patient presents with excessive thirst and polyuria due to decreased secretion of a hormone from the posterior pituitary. The posterior pituitary secretes:",
+                options: ["GH", "TSH", "ADH", "FSH"],
+                answer: 2,
+                explanation: "The posterior pituitary stores/releases ADH and oxytocin; ADH deficiency causes diabetes insipidus (polyuria, polydipsia)."
+              },
+              {
+                q: "A 40-year-old man presents with episodic headache, sweating, and palpitations, persistently elevated blood pressure, and increased urinary catecholamines. The tumor that follows the rule of 10 is:",
+                options: ["Lymphoma", "Oncocytoma", "Pheochromocytoma", "Paraganglioma"],
+                answer: 2,
+                explanation: "Pheochromocytoma classically follows the rule of 10s (10% bilateral, extra-adrenal, malignant, familial, etc.) and secretes catecholamines."
+              },
+              {
+                q: "A diabetic patient is monitored for long-term glycemic control; the test reflects average blood glucose over the past 3 months. Which hemoglobin fraction is used to measure glycemic control?",
+                options: ["HbA", "HbS", "HbA2", "HbA1C"],
+                answer: 3,
+                explanation: "HbA1c (glycated hemoglobin) reflects average glycemia over roughly the preceding 3 months."
+              },
+              {
+                q: "A patient with type 2 diabetes shows elevated levels of amylin, a peptide that modulates insulin and satiety. Amylin is secreted by:",
+                options: ["Alpha cells", "Beta cells", "D cells", "PP cells"],
+                answer: 1,
+                explanation: "Amylin is co-secreted with insulin by the pancreatic beta cells."
+              }
+            ]
+          },
+          "bone-soft-tissue": {
+            name: "Bone & Soft Tissue",
+            emoji: "🦴",
+            questions: [
+              {
+                q: "A 17-year-old male presents with nocturnal pain in the bone of his left leg, quickly relieved by aspirin. X-rays reveal a round, radiolucent area with central mineralization surrounded by thickened bone, measuring approximately 1.2 cm. What is the correct diagnosis?",
+                options: ["Chondroma", "Osteoma", "Osteoblastoma", "Osteoid osteoma"],
+                answer: 3,
+                explanation: "A small (<2 cm) painful nidus relieved by aspirin (NSAIDs) with surrounding reactive sclerosis is classic osteoid osteoma. Osteoblastoma is larger (>2 cm) and not relieved by aspirin."
+              },
+              {
+                q: "An 11-year-old boy presents with an enlarging, painful lesion in the medullary cavity of his left femur. X-rays reveal an irregular, destructive lesion with an onion-skin periosteal reaction. Histology shows sheets of uniform small, round, blue cells. What is the correct diagnosis?",
+                options: ["Chondroblastoma", "Ewing's sarcoma", "Fibrosarcoma", "Osteoblastoma"],
+                answer: 1,
+                explanation: "Onion-skin periosteal reaction with sheets of small round blue cells in a child = Ewing's sarcoma (t(11;22))."
+              },
+              {
+                q: "A 4-year-old boy presents with numerous fractures unrelated to excessive trauma, loose joints, decreased hearing, and blue sclerae. X-rays reveal markedly thinned bones. What is the correct diagnosis?",
+                options: ["Osteopetrosis", "Osteoporosis", "Osteomalacia", "Osteogenesis imperfecta"],
+                answer: 3,
+                explanation: "Fragile bones, blue sclerae, hearing loss, and joint laxity from a type I collagen defect = osteogenesis imperfecta."
+              },
+              {
+                q: "A 71-year-old female presents with sudden severe lower back pain, severe kyphosis, and an X-ray showing a lumbar vertebral compression fracture with marked thinning of the bones. Serum calcium, phosphorus, alkaline phosphatase, and PTH are all normal. This woman's bone changes are most likely due to:",
+                options: ["Osteopetrosis", "Osteoporosis", "Osteomalacia", "Osteitis fibrosa cystica"],
+                answer: 1,
+                explanation: "Postmenopausal vertebral compression fractures with normal biochemistry are characteristic of osteoporosis."
+              },
+              {
+                q: "A 65-year-old man presents with bone pain and bowing of long bones. Histology shows prominent osteoid seams, very large osteoclasts with more than 12 hyperchromatic nuclei, and viral-type inclusion particles. Which is the most characteristic diagnosis?",
+                options: ["Paget's disease", "Gaucher's disease", "Fibrous dysplasia", "Giant cell tumor of bone"],
+                answer: 0,
+                explanation: "Giant, hyperchromatic osteoclasts with viral-like inclusions and a mosaic bone pattern characterize Paget's disease of bone."
+              },
+              {
+                q: "A 12-year-old boy develops fever, pain, and swelling of the leg. Radiographs suggest acute hematogenous osteomyelitis. Which part of a long bone is usually involved first?",
+                options: ["Metaphyseal region", "Diaphysis", "Epiphysis", "Area around the entrance of the nutrient artery"],
+                answer: 0,
+                explanation: "In children, the metaphysis is involved first because its sluggish vascular loops favour bacterial seeding."
+              },
+              {
+                q: "A patient with chronic bone infection develops necrotic fragments of dead bone that separate from viable bone. This fragment (sequestrum) is most classically seen in:",
+                options: ["Paget's disease of bone", "Osteomyelitis", "Osteoclastoma", "Aneurysmal bone cyst"],
+                answer: 1,
+                explanation: "A sequestrum (dead bone) — often surrounded by an involucrum of new bone — is characteristic of chronic osteomyelitis."
+              },
+              {
+                q: "A 19-year-old male presents with swelling of the distal femur. Histopathology reveals malignant osteoblasts directly producing osteoid. Which tumor shows osteoid formation?",
+                options: ["Enchondroma", "Osteogenic sarcoma", "Osteoclastoma", "Paget disease of bone"],
+                answer: 1,
+                explanation: "Production of osteoid directly by malignant osteoblasts defines osteogenic sarcoma (osteosarcoma)."
+              },
+              {
+                q: "A 14-year-old boy presents with pain and swelling in the shaft of the femur. Biopsy shows small round blue cells, and the tumor arises from the diaphysis. Which tumor is most likely?",
+                options: ["Osteogenic sarcoma", "Chondrosarcoma", "Giant cell tumor", "Ewing sarcoma"],
+                answer: 3,
+                explanation: "A diaphyseal small round blue cell tumor in a child is Ewing sarcoma (osteosarcoma usually arises in the metaphysis)."
+              },
+              {
+                q: "A 68-year-old man presents with a rapidly growing, firm mass on his right leg. Biopsy reveals poorly differentiated cells with pleomorphic nuclei, high N/C ratio, extensive muscle invasion, no capsule, and a high mitotic rate with abnormal mitoses. Which is the most likely diagnosis?",
+                options: ["Lipoma", "Squamous papilloma", "Osteosarcoma", "Benign adenoma"],
+                answer: 2,
+                explanation: "Pleomorphism, invasion, lack of capsule, and abnormal mitoses indicate a high-grade malignancy — osteosarcoma among the options."
+              },
+              {
+                q: "A 10-year-old child presents with a tibial mass. Pathological examination reveals a small blue round cell tumor. Which molecular finding is most likely to be present?",
+                options: ["22q translocation", "11q deletion", "7p translocation", "n-MYC amplification"],
+                answer: 0,
+                explanation: "Ewing sarcoma (small round blue cell tumor of bone) carries the t(11;22)(q24;q12) EWSR1-FLI1 translocation."
+              }
+            ]
+          },
+          "cns": {
+            name: "Central Nervous System",
+            emoji: "🧠",
+            questions: [
+              {
+                q: "A 25-year-old woman undergoes a lumbar puncture for evaluation of suspected meningitis. Two hours later, she complains of a severe headache that worsens when sitting or standing and is relieved when lying down. What is the most likely complication in this patient?",
+                options: ["Infection", "Backache", "Headache", "Medullary herniation"],
+                answer: 2,
+                explanation: "A postural headache (worse upright, relieved lying down) after LP is a post-dural puncture headache from CSF leakage."
+              },
+              {
+                q: "A 6-year-old child was admitted with giddiness, acute headache and vomiting of one day's duration. On examination there was neck rigidity. CSF shows raised pressure, raised proteins and reduced glucose. The probable diagnosis is:",
+                options: ["Acute pyogenic meningitis", "Acute viral meningitis", "Brain abscess", "Tubercular meningitis"],
+                answer: 0,
+                explanation: "Acute onset with raised pressure, high protein, and low glucose indicates acute pyogenic (bacterial) meningitis. The very short (1-day) course argues against the more indolent tubercular meningitis."
+              }
+            ]
+          }
+        }
+      }
+    }
   },
 
   pharma: {
